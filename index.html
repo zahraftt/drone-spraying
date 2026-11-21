@@ -1,0 +1,2402 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta name="theme-color" content="#08251a" />
+<title>سم‌پاشی هوشمند مزارع با پهپاد کشاورزی | علی غلامی – استان فارس</title>
+<meta name="description" content="خدمات تخصصی سم‌پاشی مزارع کشاورزی با پهپاد N20 Plas در استان فارس. اجرای سریع، دقیق و یکنواخت، محاسبه آنلاین مساحت و هزینه، صدور فاکتور و ثبت درخواست از طریق واتساپ." />
+<meta name="keywords" content="سم پاشی پهپاد, پهپاد کشاورزی, سمپاشی مزارع, استان فارس, N20 Plas, سمپاشی هوشمند" />
+<meta name="robots" content="index,follow" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fa_IR" />
+<meta property="og:site_name" content="خدمات سم‌پاشی پهپادی علی غلامی" />
+<meta property="og:title" content="سم‌پاشی هوشمند مزارع با پهپاد کشاورزی" />
+<meta property="og:description" content="اجرای سریع، دقیق و یکنواخت عملیات سم‌پاشی مزارع کشاورزی با پهپاد تخصصی N20 Plas در استان فارس." />
+<meta property="og:image" content="https://images.unsplash.com/photo-1508614589041-895b88991e3e?auto=format&fit=crop&w=1200&q=80" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2308251a'/%3E%3Cg fill='none' stroke='%23c4f04a' stroke-width='1.8' stroke-linecap='round'%3E%3Ccircle cx='9' cy='9' r='2.6'/%3E%3Ccircle cx='23' cy='9' r='2.6'/%3E%3Ccircle cx='9' cy='23' r='2.6'/%3E%3Ccircle cx='23' cy='23' r='2.6'/%3E%3Crect x='12.5' y='12.5' width='7' height='7' rx='2'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+<script>document.documentElement.classList.add('js');</script>
+<style>
+/* ============================================================
+   ۱. متغیرها و پایه
+   ============================================================ */
+:root{
+  --forest-900:#061a12;
+  --forest-800:#08251a;
+  --forest-700:#0c3325;
+  --forest-600:#12432f;
+  --olive:#6f7f4a;
+  --olive-soft:#a8b57c;
+  --lime:#c4f04a;
+  --lime-600:#a8d92f;
+  --lime-soft:#e9ffb0;
+  --sand:#ece6d6;
+  --paper:#f6f8f3;
+  --white:#ffffff;
+  --ink:#0a1410;
+  --muted:#5d6b62;
+  --line:rgba(10,25,18,.10);
+  --radius:22px;
+  --shadow-sm:0 2px 10px rgba(8,37,26,.06);
+  --shadow:0 18px 45px -20px rgba(8,37,26,.35);
+  --shadow-lg:0 40px 90px -40px rgba(8,37,26,.55);
+  --header-h:70px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{
+  -webkit-text-size-adjust:100%;
+  scroll-behavior:smooth;
+  scroll-padding-top:90px;
+}
+body{
+  margin:0;
+  font-family:'Vazirmatn',system-ui,-apple-system,'Segoe UI',Tahoma,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  font-size:16px;
+  line-height:1.85;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+h1,h2,h3,h4,p,ul,ol,figure,dl,dd{margin:0}
+ul,ol{padding:0;list-style:none}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+::selection{background:var(--lime);color:var(--forest-900)}
+:focus-visible{outline:3px solid var(--lime-600);outline-offset:3px;border-radius:8px}
+
+/* اسکرول‌بار */
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#e9eee4}
+::-webkit-scrollbar-thumb{background:#b9c7b0;border-radius:99px}
+::-webkit-scrollbar-thumb:hover{background:var(--olive)}
+
+/* ============================================================
+   ۲. ابزارهای عمومی
+   ============================================================ */
+.wrap{width:min(1180px,calc(100% - 2.5rem));margin-inline:auto}
+@media (max-width:520px){.wrap{width:calc(100% - 1.75rem)}}
+
+.section{padding-block:clamp(44px,7vw,92px);position:relative}
+.section-alt{background:linear-gradient(180deg,#ffffff 0%,#f0f4ea 100%)}
+.section-dark{background:linear-gradient(150deg,var(--forest-900),var(--forest-700) 65%,#123a2a);color:#fff}
+
+.eyebrow{
+  display:inline-flex;align-items:center;gap:.5rem;
+  font-size:.76rem;font-weight:800;letter-spacing:.02em;
+  color:var(--forest-700);
+  background:rgba(196,240,74,.28);
+  border:1px solid rgba(196,240,74,.65);
+  padding:.28rem .8rem;border-radius:999px;width:fit-content;
+}
+.eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime-600);flex:none}
+.eyebrow.light{background:rgba(196,240,74,.14);border-color:rgba(196,240,74,.45);color:var(--lime-soft)}
+
+.section-head{max-width:680px;margin-bottom:clamp(1.6rem,3vw,2.6rem);display:grid;gap:.75rem}
+.section-head h2{font-size:clamp(1.45rem,3.6vw,2.35rem);font-weight:900;line-height:1.35;letter-spacing:-.5px;color:var(--forest-900)}
+.section-head p{color:var(--muted);font-size:.95rem}
+
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  padding:.85rem 1.6rem;border-radius:999px;font-weight:800;font-size:.92rem;
+  border:1.5px solid transparent;cursor:pointer;transition:transform .25s ease,background .25s ease,box-shadow .25s ease,color .25s ease;
+  min-height:50px;text-align:center;line-height:1.4;
+  -webkit-tap-highlight-color:transparent;
+}
+.btn:active{transform:scale(.98)}
+.btn.full{width:100%}
+.btn-lime{background:var(--lime);color:#0b2a1e;box-shadow:0 14px 32px -14px rgba(196,240,74,.95)}
+.btn-lime:hover{background:var(--lime-600);transform:translateY(-2px);box-shadow:0 18px 38px -14px rgba(196,240,74,1)}
+.btn-dark{background:var(--forest-800);color:#fff}
+.btn-dark:hover{background:var(--forest-600);transform:translateY(-2px)}
+.btn-outline{background:transparent;color:var(--forest-800);border-color:rgba(8,37,26,.22)}
+.btn-outline:hover{background:rgba(8,37,26,.06);border-color:rgba(8,37,26,.4)}
+.btn-ghost{background:rgba(255,255,255,.09);color:#fff;border-color:rgba(255,255,255,.38);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.btn-ghost:hover{background:rgba(255,255,255,.18);transform:translateY(-2px)}
+.btn-wa{background:#1faa53;color:#fff;box-shadow:0 14px 30px -16px rgba(31,170,83,.95)}
+.btn-wa:hover{background:#178f45;transform:translateY(-2px)}
+
+.skip{position:absolute;inset-inline-start:-9999px;top:0;background:var(--forest-800);color:#fff;padding:.7rem 1.2rem;border-radius:0 0 12px 12px;z-index:200}
+.skip:focus{inset-inline-start:1rem}
+
+/* انیمیشن ورود */
+.js .reveal{opacity:0;transform:translateY(26px);transition:opacity .75s cubic-bezier(.2,.7,.3,1),transform .75s cubic-bezier(.2,.7,.3,1)}
+.js .reveal.in{opacity:1;transform:none}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+@keyframes heroZoom{from{transform:scale(1.02)}to{transform:scale(1.12)}}
+@keyframes pulseDot{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.45;transform:scale(.75)}}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;animation-iteration-count:1 !important;transition-duration:.001ms !important}
+  .js .reveal{opacity:1;transform:none}
+}
+
+/* ============================================================
+   ۳. هدر و ناوبری
+   ============================================================ */
+.site-header{
+  position:sticky;top:0;z-index:80;
+  background:rgba(246,248,243,.78);
+  backdrop-filter:blur(18px) saturate(150%);
+  -webkit-backdrop-filter:blur(18px) saturate(150%);
+  border-bottom:1px solid rgba(10,25,18,.07);
+  transition:background .3s ease,box-shadow .3s ease;
+  padding-top:env(safe-area-inset-top);
+}
+.site-header.is-scrolled{background:rgba(255,255,255,.94);box-shadow:0 12px 34px -24px rgba(8,37,26,.6)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:.75rem;min-height:var(--header-h);padding-block:.45rem}
+
+.brand{display:flex;align-items:center;gap:.65rem;min-width:0}
+.brand-mark{
+  width:44px;height:44px;border-radius:14px;flex:none;
+  background:linear-gradient(145deg,var(--forest-700),var(--forest-900));
+  display:grid;place-items:center;color:var(--lime);
+  box-shadow:0 12px 22px -14px rgba(8,37,26,.9);
+  transition:transform .3s ease;
+}
+.brand:hover .brand-mark{transform:rotate(-6deg) scale(1.05)}
+.brand-text{display:flex;flex-direction:column;line-height:1.35;min-width:0}
+.brand-text strong{font-size:.94rem;font-weight:900;letter-spacing:-.2px;white-space:nowrap}
+.brand-text small{font-size:.68rem;color:var(--muted);white-space:nowrap}
+
+.nav-desktop{display:none;align-items:center;gap:.25rem;background:rgba(255,255,255,.75);border:1px solid rgba(10,25,18,.08);padding:.3rem;border-radius:999px}
+.nav-link{padding:.5rem 1.15rem;border-radius:999px;font-size:.88rem;font-weight:700;color:#2a3a31;transition:.25s ease;white-space:nowrap}
+.nav-link:hover{background:rgba(196,240,74,.28)}
+.nav-link.is-active{background:var(--forest-800);color:#fff;box-shadow:0 8px 18px -12px rgba(8,37,26,.9)}
+.social-nav{color:#426b32;font-weight:900}
+
+.header-actions{display:flex;align-items:center;gap:.5rem;flex:none}
+.call-btn{
+  display:inline-flex;align-items:center;gap:.45rem;
+  padding:.6rem 1rem;border-radius:999px;
+  background:var(--forest-800);color:#fff;font-weight:800;font-size:.84rem;
+  white-space:nowrap;transition:.25s ease;min-height:44px;
+  -webkit-tap-highlight-color:transparent;
+}
+.call-btn:hover{background:var(--forest-600);transform:translateY(-1px)}
+.call-btn svg{color:var(--lime);flex:none}
+.call-num{display:none}
+.call-short{display:inline}
+
+.hamburger{
+  width:46px;height:46px;border-radius:14px;flex:none;
+  border:1px solid rgba(10,25,18,.13);background:#fff;
+  display:grid;place-items:center;gap:5px;cursor:pointer;
+  transition:.25s ease;padding:0;
+}
+.hamburger:hover{background:#f1f6e8}
+.hamburger span{display:block;width:20px;height:2px;background:var(--forest-800);border-radius:2px;transition:transform .3s ease,opacity .3s ease}
+.hamburger[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.hamburger[aria-expanded="true"] span:nth-child(2){opacity:0;transform:scaleX(.4)}
+.hamburger[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+.mobile-nav{
+  display:grid;gap:.3rem;padding:0 1.25rem;max-height:0;overflow:hidden;
+  transition:max-height .38s cubic-bezier(.3,.7,.3,1),padding .38s ease;
+  background:#fff;border-bottom:1px solid transparent;
+}
+.mobile-nav.is-open{max-height:360px;padding:.7rem 1.25rem 1.2rem;border-bottom-color:rgba(10,25,18,.08)}
+.mobile-nav a{padding:.85rem 1rem;border-radius:14px;font-weight:700;font-size:.92rem;display:flex;align-items:center;justify-content:space-between;transition:.2s}
+.mobile-nav a:hover{background:#f1f6e8}
+.mobile-nav a.is-active{background:var(--forest-800);color:#fff}
+.mobile-nav .mobile-call{background:var(--lime);color:#0b2a1e !important;font-weight:900;justify-content:center;margin-top:.3rem}
+
+@media (min-width:520px){.call-num{display:inline}.call-short{display:none}}
+@media (min-width:960px){
+  .nav-desktop{display:flex}
+  .hamburger{display:none}
+  .mobile-nav{display:none}
+  :root{--header-h:76px}
+}
+
+/* ============================================================
+   ۴. هیرو
+   ============================================================ */
+
+   .hero{
+  position:relative;min-height:clamp(600px,90svh,880px);
+  display:flex;align-items:center;overflow:hidden;isolation:isolate;
+  background:var(--forest-900);
+}
+.hero-media{position:absolute;inset:0;z-index:-2;overflow:hidden}
+.hero-media img{
+  width:100%;height:100%;object-fit:cover;object-position:center 42%;
+  transform:scale(1.03);
+  animation:heroZoom 22s ease-in-out infinite alternate;
+  transition:opacity .5s ease;
+}
+.hero-media img.is-broken{opacity:0}
+.hero::after{
+  content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:
+    linear-gradient(to left, rgba(6,26,18,.97) 6%, rgba(6,26,18,.86) 40%, rgba(6,26,18,.42) 76%, rgba(6,26,18,.18) 100%),
+    linear-gradient(to top, rgba(6,26,18,.98) 0%, rgba(6,26,18,.15) 42%, transparent 70%),
+    radial-gradient(58% 55% at 88% 14%, rgba(196,240,74,.16), transparent 72%);
+}
+.hero-inner{
+  position:relative;z-index:2;width:min(1180px,calc(100% - 2.5rem));
+  margin-inline:auto;padding-block:clamp(70px,13vh,130px);
+  display:grid;gap:1.15rem;max-width:min(820px,calc(100% - 2.5rem));
+  justify-items:start;text-align:start;
+}
+@media (max-width:520px){.hero-inner{width:calc(100% - 1.75rem);max-width:calc(100% - 1.75rem)}}
+
+.hero-badge{
+  display:inline-flex;align-items:center;gap:.55rem;
+  padding:.42rem 1rem;border-radius:999px;
+  background:rgba(196,240,74,.14);border:1px solid rgba(196,240,74,.42);
+  color:var(--lime-soft);font-size:.76rem;font-weight:700;
+  backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+}
+.hero-badge .dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 4px rgba(196,240,74,.22);animation:pulseDot 2.2s ease-in-out infinite;flex:none}
+
+.hero h1{
+  font-size:clamp(1.95rem,6.4vw,4.05rem);
+  line-height:1.28;font-weight:900;color:#fff;letter-spacing:-1px;
+  text-wrap:balance;
+}
+.hero h1 em{font-style:normal;color:var(--lime);position:relative;display:inline-block}
+.hero h1 em::after{
+  content:"";position:absolute;inset-inline:0;bottom:.02em;height:.16em;border-radius:99px;
+  background:linear-gradient(to left,var(--lime),transparent);opacity:.3;z-index:-1;
+}
+.hero-lead{
+  color:rgba(255,255,255,.84);font-size:clamp(.95rem,1.7vw,1.12rem);
+  max-width:52ch;font-weight:400;line-height:2;
+}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:.4rem}
+.hero-cta .btn{min-width:170px}
+
+.hero-stats{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:.85rem 1rem;
+  margin-top:1.1rem;padding-top:1.3rem;width:100%;
+  border-top:1px solid rgba(255,255,255,.16);
+}
+.hero-stats li{display:flex;flex-direction:column;gap:.1rem}
+.hero-stats strong{color:var(--lime);font-size:clamp(1.15rem,3.5vw,1.5rem);font-weight:900;line-height:1.25}
+.hero-stats span{color:rgba(255,255,255,.7);font-size:.75rem}
+@media (min-width:660px){.hero-stats{grid-template-columns:repeat(4,1fr)}}
+
+.hero-inner > *{animation:fadeUp .9s cubic-bezier(.2,.7,.3,1) both}
+.hero-inner > *:nth-child(1){animation-delay:.05s}
+.hero-inner > *:nth-child(2){animation-delay:.13s}
+.hero-inner > *:nth-child(3){animation-delay:.21s}
+.hero-inner > *:nth-child(4){animation-delay:.29s}
+.hero-inner > *:nth-child(5){animation-delay:.37s}
+
+/* ============================================================
+   ۵. کارت صاحب دستگاه
+   ============================================================ */
+.owner-panel{
+  display:grid;gap:1.4rem;
+  padding:clamp(1.25rem,3.2vw,2.5rem);
+  border-radius:28px;background:#fff;border:1px solid var(--line);
+  box-shadow:var(--shadow);
+  position:relative;overflow:hidden;
+}
+.owner-panel::before{
+  content:"";position:absolute;inset-inline-start:-60px;top:-60px;width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,240,74,.32),transparent 70%);pointer-events:none;
+}
+.owner-head{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;position:relative}
+.owner-avatar{
+  width:74px;height:74px;border-radius:24px;flex:none;
+  background:linear-gradient(145deg,var(--forest-600),var(--forest-900));
+  color:var(--lime);display:grid;place-items:center;
+  font-weight:900;font-size:1.3rem;letter-spacing:1px;
+  box-shadow:0 18px 34px -20px rgba(8,37,26,1);
+}
+.owner-name{display:grid;gap:.25rem}
+.owner-name h2{font-size:clamp(1.3rem,3.4vw,1.85rem);font-weight:900;line-height:1.3;color:var(--forest-900)}
+.owner-name span{font-size:.82rem;color:var(--muted)}
+.owner-desc{color:#42544a;font-size:.94rem;line-height:2;position:relative}
+.owner-actions{display:flex;flex-wrap:wrap;gap:.6rem;position:relative}
+
+.owner-meta{
+  display:grid;gap:.6rem;grid-template-columns:1fr;
+  border-top:1px dashed rgba(10,25,18,.14);padding-top:1.2rem;position:relative;
+}
+.owner-meta li{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;
+  background:#f7faf1;border:1px solid #e6edda;border-radius:14px;
+  padding:.65rem .9rem;
+}
+.owner-meta small{font-size:.76rem;color:var(--muted);font-weight:600}
+.owner-meta strong{font-size:.92rem;font-weight:900;color:var(--forest-800)}
+@media (min-width:760px){
+  .owner-panel{grid-template-columns:1.25fr .9fr;align-items:center}
+  .owner-panel > .owner-info{display:grid;gap:1rem}
+  .owner-meta{border-top:0;border-inline-start:1px dashed rgba(10,25,18,.14);padding-top:0;padding-inline-start:1.4rem}
+}
+
+.phone-link{color:var(--forest-800);font-weight:900;text-decoration:none;border-bottom:2px solid rgba(196,240,74,.8);transition:.2s}
+.phone-link:hover{color:var(--forest-600);border-bottom-color:var(--lime-600)}
+
+/* ============================================================
+   ۶. مشخصات فنی
+   ============================================================ */
+.spec-grid{display:grid;gap:.9rem;grid-template-columns:repeat(2,1fr)}
+@media (min-width:820px){.spec-grid{grid-template-columns:repeat(5,1fr)}}
+.spec-card{
+  background:#fff;border:1px solid var(--line);border-radius:20px;
+  padding:1.1rem .95rem;display:flex;flex-direction:column;gap:.3rem;
+  transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease;
+  position:relative;overflow:hidden;
+}
+.spec-card::before{
+  content:"";position:absolute;inset-inline-end:-40px;top:-40px;width:110px;height:110px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,240,74,.4),transparent 70%);
+  opacity:0;transition:opacity .4s ease;pointer-events:none;
+}
+.spec-card:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:rgba(196,240,74,.85)}
+.spec-card:hover::before{opacity:1}
+.spec-ico{
+  width:44px;height:44px;border-radius:14px;flex:none;
+  background:linear-gradient(145deg,#eef7d6,#dff0b6);
+  color:var(--forest-700);display:grid;place-items:center;margin-bottom:.35rem;
+  transition:transform .35s ease;
+}
+.spec-card:hover .spec-ico{transform:scale(1.08) rotate(-4deg)}
+.spec-card small{font-size:.74rem;color:var(--muted);font-weight:600}
+.spec-card strong{font-size:1.02rem;font-weight:900;color:var(--forest-800);line-height:1.4}
+
+/* ============================================================
+   ۷. خدمات
+   ============================================================ */
+.service-grid{display:grid;gap:.9rem;grid-template-columns:1fr}
+@media (min-width:640px){.service-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:1000px){.service-grid{grid-template-columns:repeat(4,1fr)}}
+.svc-card{
+  background:#fff;border:1px solid var(--line);border-radius:22px;
+  padding:1.25rem;display:grid;gap:.6rem;align-content:start;
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+.svc-card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.svc-card h3{font-size:.98rem;font-weight:900;color:var(--forest-800);display:flex;align-items:center;gap:.5rem}
+.svc-card h3 svg{color:var(--olive);flex:none}
+.svc-card p{font-size:.86rem;color:var(--muted);line-height:1.9}
+.svc-card.is-wide{grid-column:1/-1}
+@media (min-width:1000px){.svc-card.is-wide{grid-column:span 2}}
+.chips{display:flex;flex-wrap:wrap;gap:.45rem}
+.chip{
+  font-size:.79rem;font-weight:700;color:var(--forest-700);
+  background:#f0f6e4;border:1px solid #dcebc0;border-radius:999px;padding:.32rem .8rem;
+  transition:.25s;
+}
+.chip:hover{background:var(--lime);border-color:var(--lime-600);color:var(--forest-900)}
+.svc-card.is-no{border-color:rgba(224,82,82,.28);background:#fff8f7}
+.svc-card.is-no h3{color:#b83b3b}
+.svc-card.is-no h3 svg{color:#d05a5a}
+
+/* ============================================================
+   ۸. قیمت‌گذاری
+   ============================================================ */
+.price-panel{display:grid;gap:1.2rem}
+@media (min-width:960px){.price-panel{grid-template-columns:1.15fr .85fr;align-items:stretch}}
+
+.price-card{
+  position:relative;overflow:hidden;border-radius:30px;
+  padding:clamp(1.5rem,4vw,2.8rem);
+  background:linear-gradient(150deg,var(--forest-900),var(--forest-700) 55%,#17452f);
+  color:#fff;box-shadow:var(--shadow-lg);
+  display:grid;gap:1.1rem;align-content:start;
+}
+.price-card::after{
+  content:"";position:absolute;inset-inline-end:-80px;bottom:-80px;width:260px;height:260px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,240,74,.22),transparent 70%);pointer-events:none;
+}
+.price-card h2{font-size:clamp(1.35rem,3.6vw,2rem);font-weight:900;line-height:1.4;position:relative}
+.price-amount{
+  display:flex;align-items:baseline;gap:.5rem;flex-wrap:wrap;
+  font-weight:900;line-height:1.2;position:relative;color:var(--lime);
+}
+.price-amount .num{font-size:clamp(2.1rem,7vw,3.4rem);letter-spacing:-1px}
+.price-amount .sep{font-size:clamp(1.1rem,3vw,1.5rem);color:rgba(255,255,255,.55);font-weight:700}
+.price-amount .unit{font-size:.9rem;color:rgba(255,255,255,.78);font-weight:700}
+.price-list{display:grid;gap:.6rem;position:relative}
+.price-list li{display:flex;gap:.6rem;align-items:flex-start;font-size:.89rem;color:rgba(255,255,255,.85);line-height:1.9}
+.price-list li::before{
+  content:"";width:18px;height:18px;flex:none;margin-top:.35rem;border-radius:50%;
+  background:rgba(196,240,74,.18);
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23c4f04a' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6 9 17l-5-5'/%3E%3C/svg%3E");
+  background-size:11px;background-repeat:no-repeat;background-position:center;
+  border:1px solid rgba(196,240,74,.4);
+}
+.price-note{
+  position:relative;font-size:.84rem;color:var(--lime-soft);
+  background:rgba(196,240,74,.1);border:1px dashed rgba(196,240,74,.42);
+  border-radius:16px;padding:.9rem 1rem;line-height:1.95;
+}
+
+.schedule-card{
+  background:#fff;border:1px solid var(--line);border-radius:26px;
+  padding:clamp(1.2rem,3vw,1.8rem);display:grid;gap:.8rem;align-content:start;
+  box-shadow:var(--shadow-sm);
+}
+.schedule-card h3{font-size:1.02rem;font-weight:900;color:var(--forest-800);display:flex;align-items:center;gap:.55rem}
+.schedule-list{display:grid;gap:.55rem}
+.schedule-list li{
+  display:flex;align-items:center;gap:.6rem;
+  padding:.6rem .75rem;border-radius:14px;background:#f7faf1;border:1px solid #e9f0dd;
+  font-size:.85rem;transition:.25s;
+}
+.schedule-list li:hover{background:#f1f8e4;transform:translateX(-3px)}
+.schedule-list .s-ico{
+  width:30px;height:30px;border-radius:10px;flex:none;display:grid;place-items:center;
+  background:var(--forest-800);color:var(--lime);
+}
+.schedule-list b{font-weight:900;color:var(--forest-800);margin-inline-start:auto;font-size:.82rem;text-align:end}
+
+/* ============================================================
+   ۹. اعتماد و مجوز
+   ============================================================ */
+.trust-band{
+  position:relative;overflow:hidden;
+  background:linear-gradient(135deg,var(--forest-900),var(--forest-700) 60%,#14402c);
+  color:#fff;padding-block:clamp(2.2rem,5vw,3.6rem);
+}
+.trust-band::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(50% 80% at 90% 0%, rgba(196,240,74,.18), transparent 70%),
+    radial-gradient(40% 70% at 8% 100%, rgba(196,240,74,.10), transparent 70%);
+}
+.trust-inner{position:relative;display:grid;gap:1.4rem;align-items:center;justify-items:start}
+@media (min-width:860px){.trust-inner{grid-template-columns:auto 1fr;gap:2.2rem}}
+.trust-badge{
+  width:88px;height:88px;border-radius:26px;flex:none;
+  display:grid;place-items:center;color:var(--lime);
+  background:rgba(196,240,74,.1);border:1px solid rgba(196,240,74,.4);
+  box-shadow:0 20px 50px -30px rgba(196,240,74,.9);
+}
+.trust-inner h2{font-size:clamp(1.25rem,3.4vw,1.95rem);font-weight:900;line-height:1.5;margin-bottom:.6rem}
+.trust-inner p{color:rgba(255,255,255,.8);font-size:.92rem;line-height:2;max-width:60ch}
+.license-pill{
+  display:inline-flex;align-items:center;gap:.55rem;margin-top:1rem;
+  background:rgba(196,240,74,.14);border:1px solid rgba(196,240,74,.5);
+  color:var(--lime-soft);border-radius:999px;padding:.5rem 1.1rem;
+  font-size:.82rem;font-weight:800;
+}
+
+/* ============================================================
+   ۱۰. گالری
+   ============================================================ */
+.gallery-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+@media (min-width:560px){.gallery-grid{grid-template-columns:repeat(2,1fr)}}
+@media (min-width:900px){.gallery-grid{grid-template-columns:repeat(3,1fr);gap:1.3rem}}
+
+.g-item{
+  position:relative;aspect-ratio:1/1;border-radius:26px;overflow:hidden;
+  background:linear-gradient(145deg,var(--forest-800),#123a29);
+  border:1px solid rgba(10,25,18,.14);cursor:zoom-in;
+  transition:transform .45s cubic-bezier(.2,.7,.3,1),box-shadow .45s ease;
+  isolation:isolate;
+}
+.g-item:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg)}
+.g-item .ph{
+  position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.7rem;
+  color:rgba(196,240,74,.55);font-size:.78rem;font-weight:700;
+  background:
+    radial-gradient(circle at 30% 20%, rgba(196,240,74,.18), transparent 60%),
+    repeating-linear-gradient(45deg, rgba(255,255,255,.03) 0 12px, transparent 12px 24px);
+}
+.g-item img{
+  position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;
+  opacity:0;transition:opacity .55s ease,transform .7s cubic-bezier(.2,.7,.3,1);
+}
+.g-item.has-img img{opacity:1}
+.g-item:hover img{transform:scale(1.07)}
+.g-item figcaption{
+  position:absolute;inset-inline:0;bottom:0;padding:1.5rem 1.1rem .95rem;
+  display:flex;flex-direction:column;gap:.1rem;color:#fff;z-index:2;
+  background:linear-gradient(to top,rgba(6,26,18,.94),rgba(6,26,18,.55) 55%,transparent);
+  transform:translateY(6px);opacity:.94;transition:.35s ease;
+}
+.g-item:hover figcaption{transform:none;opacity:1}
+.g-item figcaption strong{font-size:.92rem;font-weight:900}
+.g-item figcaption span{font-size:.74rem;color:rgba(255,255,255,.72)}
+.g-item .zoom-badge{
+  position:absolute;top:.85rem;inset-inline-start:.85rem;z-index:3;
+  width:38px;height:38px;border-radius:12px;display:grid;place-items:center;
+  background:rgba(6,26,18,.55);color:var(--lime);backdrop-filter:blur(8px);
+  border:1px solid rgba(196,240,74,.35);opacity:0;transform:translateY(-6px);transition:.3s ease;
+}
+.g-item:hover .zoom-badge,.g-item:focus-visible .zoom-badge{opacity:1;transform:none}
+
+/* لایت‌باکس */
+.lightbox{
+  position:fixed;inset:0;z-index:200;display:none;
+  align-items:center;justify-content:center;padding:1.2rem;
+  background:rgba(4,16,11,.93);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+}
+.lightbox.is-open{display:flex;animation:fadeUp .3s ease both}
+.lightbox img{
+  max-width:min(1000px,94vw);max-height:86vh;width:auto;height:auto;
+  border-radius:18px;box-shadow:0 40px 100px -30px rgba(0,0,0,.9);
+  object-fit:contain;border:1px solid rgba(196,240,74,.25);
+}
+.lb-close{
+  position:absolute;top:max(1rem,env(safe-area-inset-top));inset-inline-end:1rem;
+  width:50px;height:50px;border-radius:16px;cursor:pointer;
+  background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);color:#fff;
+  font-size:1.6rem;line-height:1;display:grid;place-items:center;transition:.25s;
+}
+.lb-close:hover{background:var(--lime);color:var(--forest-900);border-color:var(--lime)}
+.lb-caption{position:absolute;bottom:max(1rem,env(safe-area-inset-bottom));inset-inline:0;text-align:center;color:rgba(255,255,255,.8);font-size:.85rem;padding-inline:1rem}
+
+/* ============================================================
+   ۱۱. فرم سفارش
+   ============================================================ */
+.clock-chip{
+  display:inline-flex;align-items:center;gap:.5rem;flex-wrap:wrap;
+  font-size:.8rem;font-weight:700;color:var(--forest-700);
+  background:#eef6df;border:1px solid #dcebc0;border-radius:999px;padding:.4rem 1rem;width:fit-content;
+}
+.clock-chip .live-dot{width:8px;height:8px;border-radius:50%;background:#2fb45a;animation:pulseDot 1.8s ease-in-out infinite}
+
+.order-layout{display:grid;gap:1.4rem;align-items:start}
+@media (min-width:1024px){.order-layout{grid-template-columns:1.4fr .85fr;gap:1.8rem}}
+
+.order-form-card{
+  background:#fff;border:1px solid var(--line);border-radius:28px;
+  padding:clamp(1.1rem,3vw,2rem);box-shadow:var(--shadow-sm);
+}
+.fs{margin-bottom:1.6rem}
+.fs:last-child{margin-bottom:0}
+.fs-title{
+  display:flex;align-items:center;gap:.55rem;
+  font-size:.98rem;font-weight:900;color:var(--forest-800);margin-bottom:.95rem;
+}
+.fs-title::before{content:"";width:6px;height:20px;border-radius:99px;background:linear-gradient(var(--lime-600),var(--forest-600));flex:none}
+.fs-title .fs-num{
+  margin-inline-start:auto;font-size:.72rem;font-weight:800;color:var(--olive);
+  background:#f2f7e7;border:1px solid #e2edd0;border-radius:999px;padding:.15rem .6rem;
+}
+
+.grid-2{display:grid;gap:.85rem;grid-template-columns:1fr}
+@media (min-width:620px){.grid-2{grid-template-columns:1fr 1fr}}
+.grid-3{display:grid;gap:.85rem;grid-template-columns:1fr}
+@media (min-width:620px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+.span-2{grid-column:1/-1}
+
+.field{display:flex;flex-direction:column;gap:.35rem;min-width:0}
+.field label{font-size:.8rem;font-weight:800;color:#2c3b33;display:flex;align-items:center;gap:.3rem}
+.field .req{color:#d14949;font-size:.85rem}
+.field input,.field select,.field textarea{
+  width:100%;padding:.78rem .95rem;border-radius:14px;
+  border:1.5px solid rgba(10,25,18,.14);background:#fff;
+  font-family:inherit;font-size:.92rem;color:var(--ink);
+  transition:border-color .2s ease,box-shadow .2s ease,background .2s ease;
+  min-height:50px;line-height:1.6;
+}
+.field textarea{min-height:96px;resize:vertical}
+.field input::placeholder,.field textarea::placeholder{color:#9aa79d;font-size:.85rem}
+.field input:hover,.field select:hover,.field textarea:hover{border-color:rgba(10,25,18,.26)}
+.field input:focus,.field select:focus,.field textarea:focus{
+  outline:none;border-color:var(--lime-600);
+  box-shadow:0 0 0 4px rgba(196,240,74,.3);background:#fdfff9;
+}
+.field input.is-invalid,.field select.is-invalid{
+  border-color:#dd5454;box-shadow:0 0 0 4px rgba(221,84,84,.14);
+}
+.field .err{display:none;color:#c93a3a;font-size:.72rem;font-weight:700}
+.field.has-error .err{display:block}
+.field .hint{font-size:.71rem;color:#8b9a8f}
+
+/* تبدیل مساحت */
+.convert-box{
+  grid-column:1/-1;
+  display:flex;align-items:center;justify-content:space-between;gap:.8rem;flex-wrap:wrap;
+  background:linear-gradient(135deg,#f4fae8,#eef7d6);
+  border:1.5px dashed rgba(168,217,47,.75);border-radius:18px;
+  padding:.85rem 1.1rem;
+}
+.convert-box > div{display:flex;flex-direction:column;gap:.1rem;min-width:0}
+.convert-box small{font-size:.72rem;color:#6d7c64;font-weight:700}
+.convert-box strong{font-size:1rem;font-weight:900;color:var(--forest-800);line-height:1.4}
+.cv-arrow{color:var(--lime-600);flex:none;display:grid;place-items:center}
+
+/* اسلایدر نرخ */
+.rate-box{display:grid;gap:.55rem;grid-column:1/-1}
+.rate-head{display:flex;align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
+.rate-head label{font-size:.8rem;font-weight:800;color:#2c3b33}
+.rate-value{
+  font-size:.9rem;font-weight:900;color:var(--forest-800);
+  background:#eef7d6;border:1px solid #dcebc0;border-radius:999px;padding:.2rem .8rem;
+}
+input[type="range"]{
+  -webkit-appearance:none;appearance:none;width:100%;height:8px;border-radius:99px;
+  background:linear-gradient(to left,var(--lime) 0%,var(--lime-600) 100%);
+  outline:none;cursor:pointer;padding:0;min-height:8px;border:0;
+}
+input[type="range"]::-webkit-slider-thumb{
+  -webkit-appearance:none;appearance:none;width:26px;height:26px;border-radius:50%;
+  background:#fff;border:4px solid var(--forest-800);cursor:grab;
+  box-shadow:0 6px 16px -6px rgba(8,37,26,.9);transition:transform .2s;
+}
+input[type="range"]::-webkit-slider-thumb:active{transform:scale(1.12);cursor:grabbing}
+input[type="range"]::-moz-range-thumb{
+  width:22px;height:22px;border-radius:50%;background:#fff;border:4px solid var(--forest-800);
+  cursor:grab;box-shadow:0 6px 16px -6px rgba(8,37,26,.9);
+}
+.rate-scale{display:flex;justify-content:space-between;font-size:.71rem;color:#8b9a8f;font-weight:700}
+
+/* کارت خلاصه */
+.order-side{position:relative}
+@media (min-width:1024px){.order-side{position:sticky;top:calc(var(--header-h) + 1.2rem)}}
+.summary-card{
+  background:linear-gradient(160deg,var(--forest-900),var(--forest-700) 70%,#154231);
+  color:#fff;border-radius:28px;padding:clamp(1.15rem,3vw,1.7rem);
+  box-shadow:var(--shadow-lg);display:grid;gap:1rem;position:relative;overflow:hidden;
+}
+.summary-card::after{
+  content:"";position:absolute;inset-inline-end:-70px;top:-70px;width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(196,240,74,.2),transparent 70%);pointer-events:none;
+}
+.summary-top{display:flex;align-items:center;justify-content:space-between;gap:.6rem;position:relative}
+.summary-top h3{font-size:1rem;font-weight:900}
+.live-clock{
+  display:inline-flex;align-items:center;gap:.4rem;font-size:.72rem;font-weight:700;
+  color:var(--lime-soft);background:rgba(196,240,74,.12);border:1px solid rgba(196,240,74,.32);
+  border-radius:999px;padding:.22rem .7rem;white-space:nowrap;
+}
+.sum-list{display:grid;gap:.45rem;position:relative}
+.sum-list li{
+  display:flex;align-items:center;justify-content:space-between;gap:.7rem;
+  font-size:.83rem;padding:.5rem .7rem;border-radius:12px;
+  background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.07);
+}
+.sum-list span{color:rgba(255,255,255,.72)}
+.sum-list strong{font-weight:900;color:#fff;font-variant-numeric:tabular-nums;white-space:nowrap}
+.sum-list li.is-negative strong{color:#ffd0a1}
+.sum-list li.is-discount strong{color:#a8e77a}
+.sum-total{
+  display:flex;align-items:center;justify-content:space-between;gap:.6rem;
+  background:rgba(196,240,74,.14);border:1px solid rgba(196,240,74,.45);
+  border-radius:18px;padding:.85rem 1rem;position:relative;
+}
+.sum-total span{font-size:.86rem;font-weight:800;color:var(--lime-soft)}
+.sum-total strong{font-size:1.15rem;font-weight:900;color:var(--lime);white-space:nowrap}
+.sum-actions{display:grid;gap:.55rem;position:relative}
+.sum-note{font-size:.71rem;color:rgba(255,255,255,.6);line-height:1.9;position:relative}
+
+/* ============================================================
+   ۱۲. فاکتور
+   ============================================================ */
+.invoice-area{margin-top:clamp(1.8rem,4vw,3rem);scroll-margin-top:100px}
+.invoice-actions{
+  display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;
+  margin-bottom:1rem;
+}
+.invoice-actions h2{font-size:clamp(1.15rem,3vw,1.6rem);font-weight:900;color:var(--forest-900)}
+.ia-btns{display:flex;gap:.55rem;flex-wrap:wrap}
+.ia-btns .btn{min-height:46px;font-size:.85rem;padding:.7rem 1.2rem}
+
+.invoice-sheet{
+  background:#fff;border:1px solid var(--line);border-radius:24px;
+  padding:clamp(1rem,3vw,2.2rem);color:#12241c;font-size:.88rem;
+  box-shadow:var(--shadow);line-height:1.85;
+  -webkit-print-color-adjust:exact;print-color-adjust:exact;
+}
+.inv-head{
+  display:flex;flex-wrap:wrap;gap:1rem;justify-content:space-between;align-items:flex-start;
+  border-bottom:3px solid var(--forest-800);padding-bottom:1rem;margin-bottom:1.15rem;
+}
+.inv-brand{display:flex;gap:.75rem;align-items:center}
+.inv-logo{
+  width:54px;height:54px;border-radius:16px;flex:none;
+  background:linear-gradient(145deg,var(--forest-700),var(--forest-900));
+  color:var(--lime);display:grid;place-items:center;
+}
+.inv-brand-txt{display:flex;flex-direction:column;line-height:1.55}
+.inv-brand-txt strong{font-size:1rem;font-weight:900;color:var(--forest-900)}
+.inv-brand-txt span{font-size:.78rem;color:#5b6b62}
+.inv-title{text-align:start}
+.inv-title h3{margin:0 0 .4rem;font-size:1.02rem;font-weight:900;color:var(--forest-800)}
+.inv-meta{display:flex;flex-wrap:wrap;gap:.25rem .9rem;font-size:.76rem;color:#42544a}
+.inv-meta b{color:#12241c;font-weight:900}
+
+.inv-cols{display:grid;gap:.9rem;grid-template-columns:1fr;margin-bottom:1rem}
+@media (min-width:720px){.inv-cols{grid-template-columns:1fr 1fr}}
+.inv-box{border:1px solid #e2e8dd;border-radius:16px;padding:.85rem 1rem;background:#fafcf6}
+.inv-box h4{margin:0 0 .55rem;font-size:.83rem;font-weight:900;color:var(--forest-700)}
+.inv-box dl{margin:0;display:grid;gap:.28rem}
+.inv-box dl > div{
+  display:flex;justify-content:space-between;gap:.6rem;
+  font-size:.79rem;border-bottom:1px dashed #e6ece0;padding-bottom:.22rem;
+}
+.inv-box dl > div:last-child{border-bottom:0;padding-bottom:0}
+.inv-box dt{color:#657668;flex:none}
+.inv-box dd{margin:0;font-weight:800;text-align:end;word-break:break-word}
+
+.inv-table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.8rem}
+.inv-table th,.inv-table td{border:1px solid #e2e8dd;padding:.55rem .7rem;text-align:center;vertical-align:middle}
+.inv-table thead th{background:var(--forest-800);color:#fff;font-weight:800;font-size:.79rem}
+.inv-table tbody td:first-child{text-align:start;font-weight:700}
+.inv-table tbody tr:nth-child(even){background:#fafcf6}
+.inv-table tfoot th{background:#eef7d6;color:var(--forest-900);font-weight:900;font-size:.88rem}
+.inv-table tfoot th:last-child{color:var(--forest-800);font-size:.95rem}
+
+.inv-op h4,.inv-notes h4{margin:0 0 .5rem;font-size:.83rem;font-weight:900;color:var(--forest-700)}
+.inv-op{border:1px solid #e2e8dd;border-radius:16px;padding:.85rem 1rem;background:#fafcf6;margin-bottom:.9rem}
+.inv-op-grid{display:grid;gap:.35rem;grid-template-columns:1fr}
+@media (min-width:560px){.inv-op-grid{grid-template-columns:1fr 1fr}}
+.inv-op-grid div{display:flex;justify-content:space-between;gap:.6rem;font-size:.79rem;border-bottom:1px dashed #e6ece0;padding-bottom:.22rem}
+.inv-op-grid span{color:#657668}
+.inv-op-grid b{font-weight:800}
+.inv-notes{border:1px dashed #d9e3cf;border-radius:16px;padding:.8rem 1rem;background:#fcfdf9;margin-bottom:1rem;font-size:.8rem}
+.inv-notes p{color:#3d4d44;line-height:1.95;word-break:break-word}
+
+.inv-foot{
+  border-top:2px solid var(--forest-800);padding-top:.9rem;margin-top:.5rem;
+  display:flex;flex-direction:column;gap:.15rem;align-items:center;text-align:center;
+}
+.inv-foot strong{font-size:.95rem;font-weight:900;color:var(--forest-800)}
+.inv-foot span{font-size:.76rem;color:#5b6b62}
+
+/* ============================================================
+   ۱۳. فوتر
+   ============================================================ */
+.site-footer{
+  background:linear-gradient(160deg,var(--forest-900),#072015);
+  color:rgba(255,255,255,.78);padding-block:clamp(2rem,5vw,3.2rem) calc(1.5rem + env(safe-area-inset-bottom));
+  border-top:1px solid rgba(196,240,74,.16);
+}
+.footer-grid{display:grid;gap:1.6rem;grid-template-columns:1fr}
+@media (min-width:760px){.footer-grid{grid-template-columns:1.4fr 1fr 1fr;gap:2rem}}
+.footer-brand{display:flex;align-items:center;gap:.7rem;margin-bottom:.8rem}
+.footer-brand .brand-mark{background:rgba(196,240,74,.12);border:1px solid rgba(196,240,74,.3)}
+.footer-brand strong{color:#fff;font-size:.98rem;font-weight:900}
+.footer-brand small{display:block;font-size:.72rem;color:rgba(255,255,255,.55)}
+.site-footer p{font-size:.83rem;line-height:2;color:rgba(255,255,255,.62)}
+.footer-col h4{color:#fff;font-size:.88rem;font-weight:900;margin-bottom:.7rem}
+.footer-col ul{display:grid;gap:.45rem}
+.footer-col a{font-size:.82rem;color:rgba(255,255,255,.68);transition:.2s}
+.footer-col a:hover{color:var(--lime)}
+.footer-bottom{
+  margin-top:1.8rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:.6rem;justify-content:space-between;align-items:center;
+  font-size:.75rem;color:rgba(255,255,255,.45);
+}
+
+/* ============================================================
+   ۱۴. توست
+   ============================================================ */
+.toast{
+  position:fixed;inset-inline:1rem;bottom:calc(1.2rem + env(safe-area-inset-bottom));
+  z-index:300;display:flex;justify-content:center;pointer-events:none;
+}
+.toast-inner{
+  max-width:440px;width:100%;
+  background:var(--forest-900);color:#fff;border:1px solid rgba(196,240,74,.4);
+  border-radius:16px;padding:.85rem 1.1rem;font-size:.85rem;font-weight:700;
+  box-shadow:0 24px 60px -24px rgba(0,0,0,.85);
+  display:flex;align-items:center;gap:.6rem;
+  transform:translateY(20px);opacity:0;transition:.35s cubic-bezier(.2,.7,.3,1);
+}
+.toast.show .toast-inner{transform:none;opacity:1}
+.toast-inner .t-ico{
+  width:26px;height:26px;border-radius:50%;flex:none;display:grid;place-items:center;
+  background:var(--lime);color:var(--forest-900);
+}
+.toast.error .toast-inner{border-color:rgba(221,84,84,.6)}
+.toast.error .toast-inner .t-ico{background:#e05a5a;color:#fff}
+
+/* ============================================================
+   ۱۵. چاپ
+   ============================================================ */
+#printArea{display:none}
+@media print{
+  @page{size:A4;margin:12mm}
+  html,body{background:#fff !important;margin:0 !important;padding:0 !important}
+  body{-webkit-print-color-adjust:exact;print-color-adjust:exact;font-family:'Vazirmatn',Tahoma,sans-serif}
+  body > *{display:none !important}
+  body > #printArea{display:block !important}
+  #printArea .invoice-sheet{
+    border:0 !important;box-shadow:none !important;border-radius:0 !important;
+    padding:0 !important;font-size:10.5pt;line-height:1.7;
+  }
+  #printArea .inv-table,
+  #printArea .inv-box,
+  #printArea .inv-op,
+  #printArea .inv-notes{page-break-inside:avoid;break-inside:avoid}
+  #printArea .inv-head{page-break-after:avoid}
+  #printArea .inv-table th,
+  #printArea .inv-table td{padding:5px 7px}
+  #printArea .inv-logo{width:44px;height:44px}
+}
+</style>
+</head>
+<body>
+
+<a class="skip" href="#home">پرش به محتوای اصلی</a>
+
+<!-- ==================== هدر ==================== -->
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="#home" class="brand" data-nav="home" aria-label="صفحه خانه">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/>
+          <circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/>
+          <path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/>
+          <rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/>
+        </svg>
+      </span>
+      <span class="brand-text">
+        <strong>پهپاد کشاورزی</strong>
+        <small>علی غلامی · استان فارس</small>
+      </span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="ناوبری اصلی">
+      <a href="#home" class="nav-link is-active" data-nav="home">خانه</a>
+      <a href="#gallery" class="nav-link" data-nav="gallery">گالری</a>
+      <a href="#order" class="nav-link" data-nav="order">فاکتور و ثبت سفارش</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="call-btn" href="https://instagram.com/aligholami0655" target="_blank" rel="noopener" aria-label="صفحه اینستاگرام">Instagram</a>
+      <a class="call-btn" href="tel:09165310675" aria-label="تماس با ۰۹۱۶۵۳۱۰۶۷۵">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/>
+        </svg>
+        <span class="call-num">۰۹۱۶۵۳۱۰۶۷۵</span>
+        <span class="call-short">تماس</span>
+      </a>
+      <button class="hamburger" id="hamburger" type="button" aria-label="باز کردن منو" aria-expanded="false" aria-controls="mobileNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <nav class="mobile-nav" id="mobileNav" aria-label="ناوبری موبایل">
+    <a href="#home" data-nav="home">خانه</a>
+    <a href="#gallery" data-nav="gallery">گالری</a>
+    <a href="#order" data-nav="order">فاکتور و ثبت سفارش</a>
+    <a class="mobile-call" href="tel:09165310675">تماس مستقیم: ۰۹۱۶۵۳۱۰۶۷۵</a>
+  </nav>
+</header>
+
+<main>
+<!-- ==================== خانه ==================== -->
+<section id="home" class="page-section">
+
+  <!-- هیرو -->
+  <div class="hero">
+    <div class="hero-media">
+      <img id="heroImg" src="" alt="پهپاد کشاورزی در حال عملیات سم‌پاشی روی مزرعه" fetchpriority="high" />
+    </div>
+    <div class="hero-inner">
+      <span class="hero-badge">
+        <span class="dot" aria-hidden="true"></span>
+        دارای مجوز از سازمان هواپیمایی کشوری
+      </span>
+      <h1>سم‌پاشی هوشمند مزارع با <em>پهپاد کشاورزی</em></h1>
+      <p class="hero-lead">
+        اجرای سریع، دقیق و یکنواخت عملیات سم‌پاشی مزارع کشاورزی با استفاده از پهپاد تخصصی و فناوری روز
+      </p>
+      <div class="hero-cta">
+        <a href="#order" class="btn btn-lime" data-nav="order">
+          ثبت درخواست سم‌پاشی
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg>
+        </a>
+        <a href="#gallery" class="btn btn-ghost" data-nav="gallery">
+          مشاهده گالری
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.6"/><path d="m21 15-5-5L5 21"/></svg>
+        </a>
+      </div>
+      <ul class="hero-stats">
+        <li><strong>۲</strong><span>دستگاه فعال</span></li>
+        <li><strong>۲۰</strong><span>لیتر مخزن سم</span></li>
+        <li><strong>۲۴</strong><span>ساعت فعالیت</span></li>
+        <li><strong>فارس</strong><span>محدوده خدمات</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- صاحب دستگاه -->
+  <div class="section" id="about">
+    <div class="wrap">
+      <div class="owner-panel reveal">
+        <div class="owner-info">
+          <div class="owner-head">
+            <div class="owner-name">
+              <span class="eyebrow">صاحب دستگاه</span>
+              <h2>علی غلامی</h2>
+              <span>مجری خدمات سم‌پاشی پهپادی — استان فارس</span>
+            </div>
+          </div>
+          <p class="owner-desc">
+            اجرای تخصصی عملیات سم‌پاشی مزارع کشاورزی با پهپاد <strong>N20 Plas</strong>؛
+            با تکیه بر پوشش یکنواخت سم، سرعت بالای اجرا و کاهش اتلاف نهاده‌های کشاورزی.
+            آماده‌ی پذیرش سفارش در تمام ساعات شبانه‌روز و در محدوده استان فارس.
+          </p>
+          <div class="owner-actions">
+            <a class="btn btn-dark" href="tel:09165310675">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.9.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              تماس مستقیم
+            </a>
+            <a class="btn btn-outline" href="#order" data-nav="order">ثبت درخواست سم‌پاشی</a>
+          </div>
+        </div>
+        <ul class="owner-meta">
+          <li><small>شماره تماس</small><strong><a class="phone-link" href="tel:09165310675">۰۹۱۶۵۳۱۰۶۷۵</a></strong></li>
+          <li><small>محدوده فعالیت</small><strong>استان فارس</strong></li>
+          <li><small>ساعت پاسخگویی</small><strong>۲۴ ساعته</strong></li>
+          <li><small>تعداد دستگاه</small><strong>۲ دستگاه</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- مشخصات فنی -->
+  <div class="section section-alt" id="specs">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">مشخصات دستگاه</span>
+        <h2>پهپاد تخصصی سم‌پاشی N20 Plas</h2>
+        <p>تجهیزات به‌روز، سرویس‌شده و آماده اجرای عملیات در مزارع زراعی استان فارس.</p>
+      </div>
+
+      <div class="spec-grid">
+        <article class="spec-card reveal">
+          <span class="spec-ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></svg>
+          </span>
+          <small>برند و مدل</small>
+          <strong>N20 Plas</strong>
+        </article>
+
+        <article class="spec-card reveal">
+          <span class="spec-ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          </span>
+          <small>سال ساخت</small>
+          <strong>۲۰۲۴</strong>
+        </article>
+
+        <article class="spec-card reveal">
+          <span class="spec-ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.7s6.3 6.3 6.3 11a6.3 6.3 0 0 1-12.6 0c0-4.7 6.3-11 6.3-11Z"/></svg>
+          </span>
+          <small>ظرفیت مخزن سم</small>
+          <strong>۲۰ لیتر</strong>
+        </article>
+
+        <article class="spec-card reveal">
+          <span class="spec-ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 5-6"/></svg>
+          </span>
+          <small>ظرفیت عملیات اعلام‌شده</small>
+          <strong>۱۰۰ هزار</strong>
+        </article>
+
+        <article class="spec-card reveal">
+          <span class="spec-ico" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="13" height="10" rx="2"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="6" cy="19" r="2"/><circle cx="18" cy="19" r="2"/></svg>
+          </span>
+          <small>تعداد دستگاه</small>
+          <strong>۲ دستگاه</strong>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- خدمات -->
+  <div class="section" id="services">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">معرفی خدمات</span>
+        <h2>خدمات سم‌پاشی مزارع زراعی</h2>
+        <p>اجرای عملیات سم‌پاشی روی محصولات زراعی با پوشش یکنواخت و کنترل دقیق میزان محلول‌پاشی.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="svc-card is-wide reveal">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22V10"/><path d="M12 10C12 6 9 4 5 4c0 4 3 6 7 6Z"/><path d="M12 14c0-4 3-6 7-6 0 4-3 6-7 6Z"/></svg>
+            محصولات تحت پوشش
+          </h3>
+          <p>سم‌پاشی انواع مزارع کشاورزی از جمله محصولات زیر و سایر محصولات زراعی:</p>
+          <div class="chips">
+            <span class="chip">گندم</span>
+            <span class="chip">کنجد</span>
+            <span class="chip">ذرت</span>
+            <span class="chip">کلزا</span>
+            <span class="chip">سایر محصولات زراعی</span>
+          </div>
+        </article>
+
+        <article class="svc-card reveal">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12S4 16 4 10a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+            محدوده فعالیت
+          </h3>
+          <p><strong style="color:var(--forest-800)">استان فارس</strong> — پذیرش سفارش در شهرستان‌ها و روستاهای این استان.</p>
+        </article>
+
+        <article class="svc-card is-no reveal">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="m6 18 12-12"/></svg>
+            سم‌پاشی باغات
+          </h3>
+          <p>خدمات سم‌پاشی باغات ارائه <strong>نمی‌شود</strong>.</p>
+        </article>
+
+        <article class="svc-card reveal">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3h6v4l3 6v6a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-6l3-6V3Z"/><path d="M6 14h12"/></svg>
+            تأمین سم
+          </h3>
+          <p>تأمین سم <strong>بر عهده مشتری</strong> است.</p>
+        </article>
+      </div>
+    </div>
+  </div>
+
+  <!-- قیمت‌گذاری و زمان‌بندی -->
+  <div class="section section-alt" id="pricing">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">تعرفه خدمات</span>
+        <h2>قیمت‌گذاری شفاف و منصفانه</h2>
+        <p>نرخ خدمات بر اساس مساحت زمین و شرایط اجرای عملیات محاسبه و پیش از اجرا نهایی می‌شود.</p>
+      </div>
+
+      <div class="price-panel">
+        <div class="price-card reveal">
+          <span class="eyebrow light">هزینه سم‌پاشی</span>
+          <h2>تعرفه اجرای عملیات</h2>
+          <div class="price-amount">
+            <span class="num">۲</span>
+            <span class="sep">تا</span>
+            <span class="num">۳</span>
+            <span class="unit">میلیون تومان / هر هکتار</span>
+          </div>
+          <ul class="price-list">
+            <li>قیمت بر اساس شرایط عملیات متغیر است.</li>
+            <li>قیمت محصولات مختلف یکسان است.</li>
+            <li>برای زمین‌های با مساحت بالا تخفیف ارائه می‌شود.</li>
+            <li>هزینه رفت‌وآمد هنگام هماهنگی مشخص خواهد شد.</li>
+          </ul>
+          <p class="price-note">
+            هزینه نهایی با توجه به مساحت زمین، شرایط اجرای عملیات و هزینه رفت‌وآمد مشخص خواهد شد.
+          </p>
+        </div>
+
+        <div class="schedule-card reveal">
+          <h3>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            زمان‌بندی خدمات
+          </h3>
+          <ul class="schedule-list">
+            <li>
+              <span class="s-ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
+              ساعت فعالیت <b>۲۴ ساعته</b>
+            </li>
+            <li>
+              <span class="s-ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              پذیرش سفارش <b>تمام وقت</b>
+            </li>
+            <li>
+              <span class="s-ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="3"/><path d="M16 2v4M8 2v4M3 10h18"/></svg></span>
+              رزرو از چند روز قبل <b>امکان‌پذیر</b>
+            </li>
+            <li>
+              <span class="s-ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span>
+              تأیید سفارش <b>توسط صاحب دستگاه</b>
+            </li>
+            <li>
+              <span class="s-ico" aria-hidden="true"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7"/><path d="M3 4v5h5"/></svg></span>
+              لغو و تغییر زمان <b>با هماهنگی</b>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- اعتماد و مجوز -->
+  <div class="trust-band" id="trust">
+    <div class="wrap trust-inner">
+      <div class="trust-badge reveal" aria-hidden="true">
+        <svg width="42" height="42" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z"/>
+          <path d="m8.5 12 2.5 2.5 4.5-5"/>
+        </svg>
+      </div>
+      <div class="reveal">
+        <h2>دقت فناوری، سرعت عملیات، اعتماد در اجرا</h2>
+        <p>
+          ارائه خدمات سم‌پاشی مزارع کشاورزی با استفاده از پهپاد تخصصی و رعایت الزامات و اصول عملیاتی
+        </p>
+        <span class="license-pill">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+          دارای مجوز از سازمان هواپیمایی کشوری
+        </span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ==================== گالری ==================== -->
+<section id="gallery" class="page-section">
+  <div class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">گالری اختصاصی</span>
+        <h2>در میدان عملیات</h2>
+        <p>تصاویر اختصاصی پهپاد و اجرای عملیات سم‌پاشی مزارع — برای مشاهده بزرگ‌تر روی هر تصویر بزنید.</p>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <figure class="g-item" data-index="0" tabindex="0" role="button" aria-label="مشاهده تصویر: نمای اصلی پهپاد">
+          <div class="ph" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/></svg>
+            <span>تصویر اختصاصی پهپاد</span>
+          </div>
+          <img alt="نمای اصلی پهپاد کشاورزی N20 Plas" loading="lazy" />
+          <span class="zoom-badge" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
+          </span>
+          <figcaption><strong>نمای اصلی پهپاد</strong><span>N20 Plas · ۲۰۲۴</span></figcaption>
+        </figure>
+
+        <figure class="g-item" data-index="1" tabindex="0" role="button" aria-label="مشاهده تصویر: پهپاد در حال عملیات سم‌پاشی">
+          <div class="ph" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/></svg>
+            <span>تصویر اختصاصی پهپاد</span>
+          </div>
+          <img alt="پهپاد کشاورزی در حال عملیات سم‌پاشی روی مزرعه" loading="lazy" />
+          <span class="zoom-badge" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
+          </span>
+          <figcaption><strong>پهپاد در حال عملیات</strong><span>سم‌پاشی مزرعه</span></figcaption>
+        </figure>
+
+        <figure class="g-item" data-index="2" tabindex="0" role="button" aria-label="مشاهده تصویر: جزئیات دستگاه">
+          <div class="ph" aria-hidden="true">
+            <svg width="46" height="46" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/><circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/><path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/><rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/></svg>
+            <span>تصویر اختصاصی پهپاد</span>
+          </div>
+          <img alt="نمای نزدیک از جزئیات پهپاد سم‌پاش" loading="lazy" />
+          <span class="zoom-badge" aria-hidden="true">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/></svg>
+          </span>
+          <figcaption><strong>جزئیات دستگاه</strong><span>نازل‌ها و مخزن</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== ثبت سفارش و فاکتور ==================== -->
+<section id="order" class="page-section">
+  <div class="section">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <span class="eyebrow">ثبت سفارش</span>
+        <h2>ثبت درخواست سم‌پاشی</h2>
+        <p>فرم زیر را تکمیل کنید؛ مساحت و هزینه به‌صورت لحظه‌ای محاسبه می‌شود و می‌توانید فاکتور را چاپ کنید یا درخواست را مستقیم به واتساپ ارسال نمایید.</p>
+        <div class="clock-chip">
+          <span class="live-dot" aria-hidden="true"></span>
+          <span id="clockDate">—</span>
+          <span aria-hidden="true">·</span>
+          <span id="clockTime">—</span>
+        </div>
+      </div>
+
+      <div class="order-layout">
+        <!-- فرم -->
+        <div class="order-form-card reveal">
+          <form id="orderForm" novalidate autocomplete="on">
+
+            <!-- اطلاعات مشتری -->
+            <div class="fs">
+              <div class="fs-title">اطلاعات مشتری <span class="fs-num">۱</span></div>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="firstName">نام <span class="req">*</span></label>
+                  <input id="firstName" name="firstName" type="text" autocomplete="given-name" placeholder="نام خود را وارد کنید" required />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="lastName">نام خانوادگی <span class="req">*</span></label>
+                  <input id="lastName" name="lastName" type="text" autocomplete="family-name" placeholder="نام خانوادگی خود را وارد کنید" required />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="phone">شماره تماس <span class="req">*</span></label>
+                  <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="شماره موبایل ۱۱ رقمی" required />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="landOwner">نام مالک زمین</label>
+                  <input id="landOwner" name="landOwner" type="text" placeholder="اگر مالک زمین شخص دیگری است، نام او را وارد کنید" />
+                  <span class="err"></span>
+                </div>
+                <div class="field span-2">
+                  <label for="requester">نام شخص ثبت‌کننده درخواست</label>
+                  <input id="requester" name="requester" type="text" placeholder="نام فردی که درخواست را ثبت می‌کند (اختیاری)" />
+                  <span class="err"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- اطلاعات زمین -->
+            <div class="fs">
+              <div class="fs-title">اطلاعات زمین <span class="fs-num">۲</span></div>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="landName">نام زمین</label>
+                  <input id="landName" name="landName" type="text" placeholder="مثلاً قطعه ۱ یا زمین شمالی" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="village">نام روستا</label>
+                  <input id="village" name="village" type="text" placeholder="روستای محل زمین" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="county">شهرستان</label>
+                  <input id="county" name="county" type="text" placeholder="شهرستان محل زمین" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="province">استان</label>
+                  <input id="province" name="province" type="text" placeholder="استان محل زمین" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="crop">نوع محصول <span class="req">*</span></label>
+                  <select id="crop" name="crop" required>
+                    <option value="">انتخاب کنید…</option>
+                    <option value="گندم">گندم</option>
+                    <option value="کنجد">کنجد</option>
+                    <option value="ذرت">ذرت</option>
+                    <option value="کلزا">کلزا</option>
+                    <option value="سایر محصولات زراعی">سایر محصولات زراعی</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="area">مساحت زمین <span class="req">*</span></label>
+                  <input id="area" name="area" type="text" inputmode="decimal" placeholder="مساحت را وارد کنید؛ مثلاً ۲۵۰۰۰ متر یا ۲.۵ هکتار" required />
+                  <span class="hint">می‌توانید با اعداد فارسی یا انگلیسی وارد کنید.</span>
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="areaUnit">واحد مساحت</label>
+                  <select id="areaUnit" name="areaUnit">
+                    <option value="m2">متر مربع</option>
+                    <option value="ha">هکتار</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+
+                <div class="convert-box" id="convertBox" aria-live="polite">
+                  <div>
+                    <small>مساحت وارد شده</small>
+                    <strong id="cvInput">—</strong>
+                  </div>
+                  <span class="cv-arrow" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 16H3m0 0 4-4m-4 4 4 4M17 8h4m0 0-4-4m4 4-4 4"/></svg>
+                  </span>
+                  <div>
+                    <small>معادل</small>
+                    <strong id="cvOutput">—</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- اطلاعات عملیات -->
+            <div class="fs">
+              <div class="fs-title">اطلاعات عملیات <span class="fs-num">۳</span></div>
+              <div class="grid-2">
+                <div class="field">
+                  <label for="opDate">تاریخ پیشنهادی سم‌پاشی</label>
+                  <input id="opDate" name="opDate" type="hidden" />
+                  <input id="opDateDisplay" type="text" inputmode="none" autocomplete="off" placeholder="انتخاب تاریخ شمسی" readonly />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="opTime">ساعت پیشنهادی</label>
+                  <input id="opTime" name="opTime" type="time" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="times">تعداد دفعات عملیات</label>
+                  <input id="times" name="times" type="text" inputmode="numeric" placeholder="تعداد دفعات عملیات" />
+                  <span class="err"></span>
+                </div>
+                <div class="field">
+                  <label for="opType">نوع عملیات</label>
+                  <select id="opType" name="opType">
+                    <option value="">انتخاب نوع عملیات</option>
+                    <option value="سم‌پاشی مایع">سم‌پاشی مایع</option>
+                    <option value="محلول‌پاشی">محلول‌پاشی</option>
+                    <option value="کودپاشی مایع">کودپاشی مایع</option>
+                    <option value="سایر">سایر</option>
+                  </select>
+                  <span class="err"></span>
+                </div>
+                <div class="field span-2">
+                  <label for="notes">توضیحات</label>
+                  <textarea id="notes" name="notes" placeholder="مانند مسیر دسترسی، وضعیت محصول، موانع یا نکات مهم زمین"></textarea>
+                  <span class="err"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- اطلاعات مالی -->
+            <div class="fs">
+              <div class="fs-title">اطلاعات مالی <span class="fs-num">۴</span></div>
+              <div class="grid-2">
+                <div class="rate-box">
+                  <div class="rate-head">
+                    <label for="rate">نرخ هر هکتار (تومان)</label>
+                    <span class="rate-value" id="rateValue">۲٬۵۰۰٬۰۰۰ تومان</span>
+                  </div>
+                  <input id="rateRange" type="range" min="2000000" max="3000000" step="50000" value="2500000" aria-label="نرخ هر هکتار" />
+                  <div class="rate-scale"><span>۲٬۰۰۰٬۰۰۰</span><span>۳٬۰۰۰٬۰۰۰</span></div>
+                  <input id="rate" name="rate" type="text" inputmode="numeric" value="2500000" aria-label="نرخ هر هکتار به تومان" />
+                  <span class="hint">نرخ مجاز بین ۲٬۰۰۰٬۰۰۰ تا ۳٬۰۰۰٬۰۰۰ تومان برای هر هکتار است.</span>
+                </div>
+
+                <div class="field">
+                  <label for="travel">هزینه رفت‌وآمد (تومان)</label>
+                  <input id="travel" name="travel" type="text" inputmode="numeric" value="0" placeholder="۰" />
+                  <span class="hint">در صورت نامشخص بودن، صفر بگذارید تا هنگام هماهنگی اعلام شود.</span>
+                  <span class="err"></span>
+                </div>
+
+                <div class="field">
+                  <label for="discount">تخفیف (تومان)</label>
+                  <input id="discount" name="discount" type="text" inputmode="numeric" value="0" placeholder="۰" />
+                  <span class="hint">برای زمین‌های با مساحت بالا قابل بررسی است.</span>
+                  <span class="err"></span>
+                </div>
+              </div>
+            </div>
+
+          </form>
+        </div>
+
+        <!-- خلاصه / پیش‌فاکتور -->
+        <aside class="order-side">
+          <div class="summary-card reveal">
+            <div class="summary-top">
+              <h3>پیش‌فاکتور لحظه‌ای</h3>
+              <span class="live-clock" id="liveClock">—</span>
+            </div>
+
+            <ul class="sum-list">
+              <li><span>مساحت (متر مربع)</span><strong id="sumM2">۰</strong></li>
+              <li><span>مساحت (هکتار)</span><strong id="sumHa">۰</strong></li>
+              <li><span>نرخ هر هکتار</span><strong id="sumRate">۰</strong></li>
+              <li><span>هزینه عملیات</span><strong id="sumOp">۰</strong></li>
+              <li class="is-negative"><span>هزینه رفت‌وآمد</span><strong id="sumTravel">۰</strong></li>
+              <li class="is-discount"><span>تخفیف</span><strong id="sumDiscount">۰</strong></li>
+            </ul>
+
+            <div class="sum-total">
+              <span>مبلغ نهایی</span>
+              <strong id="sumTotal">۰ تومان</strong>
+            </div>
+
+            <div class="sum-actions">
+              <button type="button" class="btn btn-lime full" id="btnPreview">پیش‌نمایش فاکتور</button>
+              <button type="button" class="btn btn-wa full" id="btnWhatsapp">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.42 1.3-1.96 1.35-.54.05-1.05.24-3.53-.73-2.98-1.17-4.85-4.24-5-4.44-.14-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.02.9 2.17.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.29 2.33 1.44.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.71-.17 1.39Z"/></svg>
+                ارسال درخواست به واتساپ
+              </button>
+              <button type="button" class="btn btn-outline full" id="btnRubika">ارسال درخواست به روبیکا</button>
+              <button type="button" class="btn btn-outline full" id="btnEitaa">ارسال درخواست به ایتا</button>
+            </div>
+
+            <p class="sum-note">
+              اطلاعات فرم فقط در مرورگر خودِ شما ذخیره می‌شود و هیچ داده‌ای بدون اطلاع شما به سروری ارسال نمی‌گردد.
+            </p>
+          </div>
+        </aside>
+      </div>
+
+      <!-- فاکتور -->
+      <div class="invoice-area" id="invoiceArea" hidden>
+        <div class="invoice-actions">
+          <h2>پیش‌نمایش فاکتور</h2>
+          <div class="ia-btns">
+            <button type="button" class="btn btn-dark" id="btnPrint">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9V2h12v7"/><rect x="6" y="14" width="12" height="8"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/></svg>
+              چاپ فاکتور / ذخیره PDF
+            </button>
+            <button type="button" class="btn btn-wa" id="btnWa2">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91S17.5 2 12.04 2Zm5.8 14.02c-.24.68-1.42 1.3-1.96 1.35-.54.05-1.05.24-3.53-.73-2.98-1.17-4.85-4.24-5-4.44-.14-.2-1.19-1.58-1.19-3.02 0-1.44.75-2.14 1.02-2.44.27-.29.58-.36.78-.36.19 0 .39 0 .56.01.18.01.42-.07.66.5.24.58.83 2.02.9 2.17.07.15.12.32.02.51-.1.19-.15.31-.29.48-.15.17-.31.38-.44.51-.15.15-.3.31-.13.6.17.29.75 1.24 1.61 2.01 1.11.99 2.04 1.29 2.33 1.44.29.15.46.12.63-.07.17-.19.73-.85.93-1.14.19-.29.39-.24.65-.14.27.1 1.69.8 1.98.94.29.15.48.22.55.34.07.12.07.71-.17 1.39Z"/></svg>
+              ارسال به واتساپ
+            </button>
+            <button type="button" class="btn btn-outline" id="btnCloseInvoice">بستن پیش‌نمایش</button>
+          </div>
+        </div>
+        <div class="invoice-sheet" id="invoiceSheet"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ==================== فوتر ==================== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/>
+              <circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/>
+              <path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/>
+              <rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/>
+            </svg>
+          </span>
+          <div>
+            <strong>خدمات سم‌پاشی پهپادی</strong>
+            <small>علی غلامی · استان فارس</small>
+          </div>
+        </div>
+        <p>
+          اجرای تخصصی سم‌پاشی مزارع کشاورزی با پهپاد N20 Plas؛
+          سرعت بالا، پوشش یکنواخت و کاهش مصرف نهاده‌ها.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>دسترسی سریع</h4>
+        <ul>
+          <li><a href="#home" data-nav="home">خانه</a></li>
+          <li><a href="#gallery" data-nav="gallery">گالری پهپاد</a></li>
+          <li><a href="#order" data-nav="order">ثبت درخواست و فاکتور</a></li>
+          <li><a href="#pricing" data-nav="home">تعرفه خدمات</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>اطلاعات تماس</h4>
+        <ul>
+          <li><a href="tel:09165310675">تلفن: ۰۹۱۶۵۳۱۰۶۷۵</a></li>
+          <li><a href="https://wa.me/989165310675" target="_blank" rel="noopener">واتساپ: ۰۹۱۶۵۳۱۰۶۷۵</a></li>
+          <li><a href="#home" data-nav="home">محدوده فعالیت: استان فارس</a></li>
+          <li><a href="#home" data-nav="home">ساعت پاسخگویی: ۲۴ ساعته</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="footerYear">۱۴۰۴</span> — تمامی حقوق محفوظ است.</span>
+      <span>دارای مجوز از سازمان هواپیمایی کشوری</span>
+    </div>
+  </div>
+</footer>
+
+<!-- لایت‌باکس -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="نمایش تصویر">
+  <button class="lb-close" id="lbClose" type="button" aria-label="بستن تصویر">×</button>
+  <img id="lbImg" src="" alt="" />
+  <div class="lb-caption" id="lbCaption"></div>
+</div>
+
+<!-- ناحیه چاپ -->
+<div id="printArea" aria-hidden="true"></div>
+
+<!-- توست -->
+<div class="toast" id="toast" aria-live="polite">
+  <div class="toast-inner">
+    <span class="t-ico" aria-hidden="true">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+    </span>
+    <span id="toastText">—</span>
+  </div>
+</div>
+
+<noscript>
+  <div style="padding:1rem;background:#fff3cd;color:#664d03;text-align:center;font-family:Tahoma,sans-serif">
+    برای استفاده از محاسبه‌گر مساحت و هزینه و ارسال درخواست، لطفاً جاوااسکریپت مرورگر خود را فعال کنید.
+  </div>
+</noscript>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/css/persian-datepicker.min.css" />
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-date@1.1.0/dist/persian-date.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/persian-datepicker@1.2.0/dist/js/persian-datepicker.min.js"></script>
+<script>
+(function () {
+  'use strict';
+
+  /* ==========================================================
+     ۱) مدیریت تصاویر سایت
+     ----------------------------------------------------------
+     فقط لینک تصاویر را در همین بخش جایگزین کنید.
+     اگر لینکی خالی بماند، یک Placeholder طراحی‌شده نمایش داده می‌شود.
+     ========================================================== */
+  const SITE_IMAGES = {
+    // تصویر اصلی پهپاد در صفحه خانه (Hero)
+    hero: "./image/picindex.png",
+
+    // دقیقاً سه تصویر ثابت گالری
+    gallery: [
+      "./image/picgallary1.png",
+      "./image/picgallary2.png",
+      "./image/picgallary3.png"
+    ]
+  };
+
+  /* ==========================================================
+     ۲) تنظیمات ثابت
+     ========================================================== */
+  const OWNER_PHONE = '09165310675';
+  const WHATSAPP_NUMBER = '989165310675';
+  const RATE_MIN = 2000000;
+  const RATE_MAX = 3000000;
+  const DRAFT_KEY = 'drone_order_draft_v1';
+
+  const DRONE_SVG =
+    '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">' +
+      '<circle cx="5" cy="5" r="2.2"/><circle cx="19" cy="5" r="2.2"/>' +
+      '<circle cx="5" cy="19" r="2.2"/><circle cx="19" cy="19" r="2.2"/>' +
+      '<path d="M6.6 6.6 9.6 9.6M17.4 6.6 14.4 9.6M6.6 17.4 9.6 14.4M17.4 17.4 14.4 14.4"/>' +
+      '<rect x="9.2" y="9.2" width="5.6" height="5.6" rx="1.8"/>' +
+    '</svg>';
+
+  /* ==========================================================
+     ۳) ابزارهای کمکی
+     ========================================================== */
+  const $  = (sel, root) => (root || document).querySelector(sel);
+  const $$ = (sel, root) => Array.from((root || document).querySelectorAll(sel));
+  const byId = id => document.getElementById(id);
+
+  const FA_DIGITS = '۰۱۲۳۴۵۶۷۸۹';
+  const AR_DIGITS = '٠١٢٣٤٥٦٧٨٩';
+
+  function toEnDigits(value) {
+    return String(value == null ? '' : value)
+      .replace(/[۰-۹]/g, d => String(FA_DIGITS.indexOf(d)))
+      .replace(/[٠-٩]/g, d => String(AR_DIGITS.indexOf(d)));
+  }
+  function faDigits(value) {
+    return String(value == null ? '' : value).replace(/\d/g, d => FA_DIGITS[+d]);
+  }
+  function toNumber(value) {
+    const cleaned = toEnDigits(value).replace(/[^\d.\-]/g, '');
+    const n = parseFloat(cleaned);
+    return isNaN(n) ? 0 : n;
+  }
+  const nfInt = new Intl.NumberFormat('fa-IR');
+  const nfDec = new Intl.NumberFormat('fa-IR', { maximumFractionDigits: 2 });
+  const fmt = n => nfInt.format(Math.round(Number(n) || 0));
+  const fmtDec = n => nfDec.format(Number(n) || 0);
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => (
+    { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]
+  ));
+
+  function persianDate(d) {
+    try {
+      return new Intl.DateTimeFormat('fa-IR', { year: 'numeric', month: '2-digit', day: '2-digit' }).format(d);
+    } catch (e) {
+      return '-';
+    }
+  }
+  function persianDateLong(d) {
+    try {
+      return new Intl.DateTimeFormat('fa-IR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(d);
+    } catch (e) {
+      return '-';
+    }
+  }
+  function persianTime(d) {
+    try {
+      return new Intl.DateTimeFormat('fa-IR', { hour: '2-digit', minute: '2-digit' }).format(d);
+    } catch (e) {
+      return '-';
+    }
+  }
+  function persianTimeSec(d) {
+    try {
+      return new Intl.DateTimeFormat('fa-IR', { hour: '2-digit', minute: '2-digit', second: '2-digit' }).format(d);
+    } catch (e) {
+      return '-';
+    }
+  }
+  function isoToPersianLong(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return '—';
+    return persianDateLong(d);
+  }
+  function isoToPersianShort(iso) {
+    if (!iso) return '—';
+    const d = new Date(iso + 'T00:00:00');
+    if (isNaN(d.getTime())) return '—';
+    return persianDate(d);
+  }
+
+  /* ==========================================================
+     ۴) توست
+     ========================================================== */
+  let toastTimer = null;
+  function showToast(message, isError) {
+    const box = byId('toast');
+    const txt = byId('toastText');
+    if (!box || !txt) return;
+    txt.textContent = message;
+    box.classList.toggle('error', !!isError);
+    box.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => box.classList.remove('show'), 4200);
+  }
+
+  /* ==========================================================
+     ۵) راه‌اندازی تصاویر
+     ========================================================== */
+  function initImages() {
+    const heroImg = byId('heroImg');
+    if (heroImg) {
+      if (SITE_IMAGES.hero) {
+        heroImg.src = SITE_IMAGES.hero;
+        heroImg.addEventListener('error', () => heroImg.classList.add('is-broken'));
+      } else {
+        heroImg.classList.add('is-broken');
+      }
+    }
+
+    const items = $$('.g-item');
+    items.forEach((fig, i) => {
+      const img = $('img', fig);
+      const url = (SITE_IMAGES.gallery || [])[i] || '';
+      if (!img) return;
+      if (!url) { fig.classList.remove('has-img'); return; }
+      img.src = url;
+      img.addEventListener('load', () => fig.classList.add('has-img'));
+      img.addEventListener('error', () => fig.classList.remove('has-img'));
+    });
+  }
+
+  /* ==========================================================
+     ۶) ناوبری، منوی موبایل و اسکرول‌اسپای
+     ========================================================== */
+  function initNav() {
+    const header = byId('siteHeader');
+    const hamburger = byId('hamburger');
+    const mobileNav = byId('mobileNav');
+    const sectionIds = ['home', 'gallery', 'order'];
+    const sections = sectionIds.map(id => byId(id)).filter(Boolean);
+
+    function closeMobileNav() {
+      if (!mobileNav) return;
+      mobileNav.classList.remove('is-open');
+      if (hamburger) hamburger.setAttribute('aria-expanded', 'false');
+    }
+
+    if (hamburger && mobileNav) {
+      hamburger.addEventListener('click', () => {
+        const open = mobileNav.classList.toggle('is-open');
+        hamburger.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+
+    $$('[data-nav]').forEach(link => {
+      link.addEventListener('click', e => {
+        const id = link.getAttribute('data-nav');
+        const target = byId(id);
+        if (!target) return;
+        e.preventDefault();
+        closeMobileNav();
+        const offset = (window.innerWidth >= 960 ? 78 : 68);
+        const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+        window.scrollTo({ top: Math.max(0, top), behavior: 'smooth' });
+        if (history.replaceState) history.replaceState(null, '', '#' + id);
+      });
+    });
+
+    function spy() {
+      const y = window.pageYOffset + 150;
+      let current = 'home';
+      sections.forEach(sec => { if (sec.offsetTop <= y) current = sec.id; });
+      $$('.nav-link, .mobile-nav a[data-nav]').forEach(a => {
+        a.classList.toggle('is-active', a.getAttribute('data-nav') === current);
+      });
+      if (header) header.classList.toggle('is-scrolled', window.pageYOffset > 12);
+    }
+
+    window.addEventListener('scroll', spy, { passive: true });
+    window.addEventListener('resize', spy);
+    spy();
+  }
+
+  /* ==========================================================
+     ۷) انیمیشن اسکرول
+     ========================================================== */
+  function initReveal() {
+    const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const targets = $$('.reveal');
+    if (reduce || !('IntersectionObserver' in window)) {
+      targets.forEach(el => el.classList.add('in'));
+      return;
+    }
+    const io = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    targets.forEach(el => io.observe(el));
+  }
+
+  /* ==========================================================
+     ۸) گالری و لایت‌باکس
+     ========================================================== */
+  function initLightbox() {
+    const box = byId('lightbox');
+    const img = byId('lbImg');
+    const cap = byId('lbCaption');
+    const closeBtn = byId('lbClose');
+    if (!box || !img) return;
+
+    function open(fig) {
+      const src = $('img', fig);
+      const title = $('figcaption strong', fig);
+      if (!src || !src.getAttribute('src')) {
+        showToast('تصویر این قاب هنوز تنظیم نشده است.', true);
+        return;
+      }
+      img.src = src.currentSrc || src.src;
+      img.alt = src.alt || '';
+      if (cap) cap.textContent = title ? title.textContent : '';
+      box.classList.add('is-open');
+      box.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function close() {
+      box.classList.remove('is-open');
+      box.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+      img.removeAttribute('src');
+    }
+
+    $$('.g-item').forEach(fig => {
+      fig.addEventListener('click', () => open(fig));
+      fig.addEventListener('keydown', e => {
+        if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(fig); }
+      });
+    });
+
+    if (closeBtn) closeBtn.addEventListener('click', close);
+    box.addEventListener('click', e => { if (e.target === box) close(); });
+    document.addEventListener('keydown', e => {
+      if (e.key === 'Escape' && box.classList.contains('is-open')) close();
+    });
+  }
+
+  /* ==========================================================
+     ۹) ساعت زنده
+     ========================================================== */
+  function tickClock() {
+    const now = new Date();
+    const cd = byId('clockDate');
+    const ct = byId('clockTime');
+    const lc = byId('liveClock');
+    if (cd) cd.textContent = persianDateLong(now);
+    if (ct) ct.textContent = persianTimeSec(now);
+    if (lc) lc.textContent = persianTime(now);
+  }
+
+  /* ==========================================================
+     ۱۰) محاسبات فرم
+     ========================================================== */
+  const FIELD_IDS = [
+    'firstName', 'lastName', 'phone', 'landOwner', 'requester',
+    'landName', 'village', 'county', 'province', 'crop', 'area', 'areaUnit',
+    'opDate', 'opTime', 'times', 'opType', 'notes',
+    'rate', 'travel', 'discount'
+  ];
+
+  function elValue(id) {
+    const el = byId(id);
+    return el ? String(el.value || '').trim() : '';
+  }
+
+  function getArea() {
+    const areaEl = byId('area');
+    const unitEl = byId('areaUnit');
+    const raw = areaEl ? toNumber(areaEl.value) : 0;
+    const unit = unitEl ? unitEl.value : 'm2';
+    const m2 = unit === 'ha' ? raw * 10000 : raw;
+    const ha = unit === 'ha' ? raw : raw / 10000;
+    return { raw: raw, unit: unit, m2: m2, ha: ha };
+  }
+
+  function getTotals() {
+    const area = getArea();
+    const rate = toNumber(byId('rate') ? byId('rate').value : 0);
+    const travel = toNumber(byId('travel') ? byId('travel').value : 0);
+    const discount = toNumber(byId('discount') ? byId('discount').value : 0);
+    const opCost = Math.round(area.ha * rate);
+    const total = Math.max(0, Math.round(opCost + travel - discount));
+    return {
+      m2: area.m2,
+      ha: area.ha,
+      unit: area.unit,
+      rate: rate,
+      travel: travel,
+      discount: discount,
+      opCost: opCost,
+      total: total
+    };
+  }
+
+  function updateCalculator() {
+    const t = getTotals();
+    const unitEl = byId('areaUnit');
+    const unit = unitEl ? unitEl.value : 'm2';
+
+    const sumM2 = byId('sumM2');
+    const sumHa = byId('sumHa');
+    const sumRate = byId('sumRate');
+    const sumOp = byId('sumOp');
+    const sumTravel = byId('sumTravel');
+    const sumDiscount = byId('sumDiscount');
+    const sumTotal = byId('sumTotal');
+    const rateValue = byId('rateValue');
+    const cvInput = byId('cvInput');
+    const cvOutput = byId('cvOutput');
+
+    if (sumM2) sumM2.textContent = fmt(t.m2);
+    if (sumHa) sumHa.textContent = fmtDec(t.ha);
+    if (sumRate) sumRate.textContent = fmt(t.rate);
+    if (sumOp) sumOp.textContent = fmt(t.opCost);
+    if (sumTravel) sumTravel.textContent = fmt(t.travel);
+    if (sumDiscount) sumDiscount.textContent = fmt(t.discount);
+    if (sumTotal) sumTotal.textContent = fmt(t.total) + ' تومان';
+    if (rateValue) rateValue.textContent = fmt(t.rate) + ' تومان';
+
+    if (cvInput && cvOutput) {
+      if (!t.m2) {
+        cvInput.textContent = '—';
+        cvOutput.textContent = '—';
+      } else if (unit === 'ha') {
+        cvInput.textContent = fmtDec(t.ha) + ' هکتار';
+        cvOutput.textContent = fmt(t.m2) + ' متر مربع';
+      } else {
+        cvInput.textContent = fmt(t.m2) + ' متر مربع';
+        cvOutput.textContent = fmtDec(t.ha) + ' هکتار';
+      }
+    }
+  }
+
+  /* ==========================================================
+     ۱۱) اعتبارسنجی
+     ========================================================== */
+  function setFieldError(el, hasError, message) {
+    if (!el) return;
+    const field = el.closest('.field');
+    if (!field) return;
+    field.classList.toggle('has-error', !!hasError);
+    el.classList.toggle('is-invalid', !!hasError);
+    const err = field.querySelector('.err');
+    if (err && message) err.textContent = message;
+  }
+
+  function validateForm(silent) {
+    const checks = [
+      { id: 'firstName', valid: v => v.trim().length >= 2, msg: 'نام را کامل وارد کنید.' },
+      { id: 'lastName',  valid: v => v.trim().length >= 2, msg: 'نام خانوادگی را کامل وارد کنید.' },
+      { id: 'phone',     valid: v => /^09\d{9}$/.test(toEnDigits(v).replace(/\D/g, '')), msg: 'شماره تماس باید ۱۱ رقم و با ۰۹ شروع شود.' },
+      { id: 'crop',      valid: v => !!v, msg: 'نوع محصول را انتخاب کنید.' },
+      { id: 'area',      valid: v => toNumber(v) > 0, msg: 'مساحت زمین باید بزرگ‌تر از صفر باشد.' }
+    ];
+
+    let firstInvalid = null;
+    checks.forEach(c => {
+      const el = byId(c.id);
+      if (!el) return;
+      const ok = c.valid(el.value);
+      setFieldError(el, !ok, c.msg);
+      if (!ok && !firstInvalid) firstInvalid = el;
+    });
+
+    if (firstInvalid) {
+      if (!silent) {
+        showToast('لطفاً فیلدهای مشخص‌شده را کامل کنید.', true);
+        firstInvalid.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        setTimeout(() => { try { firstInvalid.focus({ preventScroll: true }); } catch (e) {} }, 400);
+      }
+      return false;
+    }
+    return true;
+  }
+
+  /* ==========================================================
+     ۱۲) جمع‌آوری داده‌ها
+     ========================================================== */
+  function makeInvoiceNo() {
+    const d = new Date();
+    const p = n => String(n).padStart(2, '0');
+    const rnd = Math.floor(Math.random() * 9000) + 1000;
+    return 'DRN-' + d.getFullYear() + p(d.getMonth() + 1) + p(d.getDate()) + '-' + rnd;
+  }
+
+  function collectData() {
+    const t = getTotals();
+    const now = new Date();
+    return {
+      firstName: elValue('firstName'),
+      lastName: elValue('lastName'),
+      phone: toEnDigits(elValue('phone')).replace(/\D/g, ''),
+      landOwner: elValue('landOwner'),
+      requester: elValue('requester'),
+      landName: elValue('landName'),
+      village: elValue('village'),
+      county: elValue('county'),
+      province: elValue('province'),
+      crop: elValue('crop'),
+      m2: t.m2,
+      ha: t.ha,
+      unit: t.unit,
+      opDate: elValue('opDate'),
+      opTime: elValue('opTime'),
+      times: elValue('times'),
+      opType: elValue('opType'),
+      notes: elValue('notes'),
+      rate: t.rate,
+      travel: t.travel,
+      discount: t.discount,
+      opCost: t.opCost,
+      total: t.total,
+      invoiceNo: makeInvoiceNo(),
+      issueDate: persianDate(now),
+      issueTime: persianTime(now)
+    };
+  }
+
+  /* ==========================================================
+     ۱۳) ساخت فاکتور
+     ========================================================== */
+  function buildInvoiceHTML(d) {
+    const opDateFa = d.opDate ? isoToPersianLong(d.opDate) : '—';
+    const opTimeFa = d.opTime ? faDigits(d.opTime) : '—';
+
+    const row = (label, value) =>
+      '<div><dt>' + esc(label) + '</dt><dd>' + (value ? esc(value) : '—') + '</dd></div>';
+
+    return '' +
+      '<div class="inv-head">' +
+        '<div class="inv-brand">' +
+          '<span class="inv-logo">' + DRONE_SVG + '</span>' +
+          '<div class="inv-brand-txt">' +
+            '<strong>خدمات سم‌پاشی هوشمند پهپادی</strong>' +
+            '<span>علی غلامی — استان فارس</span>' +
+            '<span>تلفن: ' + faDigits(OWNER_PHONE) + '</span>' +
+          '</div>' +
+        '</div>' +
+        '<div class="inv-title">' +
+          '<h3>فاکتور خدمات سم‌پاشی پهپادی</h3>' +
+          '<div class="inv-meta">' +
+            '<span>شماره فاکتور: <b>' + esc(d.invoiceNo) + '</b></span>' +
+            '<span>تاریخ صدور: <b>' + esc(d.issueDate) + '</b></span>' +
+            '<span>ساعت صدور: <b>' + esc(d.issueTime) + '</b></span>' +
+          '</div>' +
+        '</div>' +
+      '</div>' +
+
+      '<div class="inv-cols">' +
+        '<div class="inv-box">' +
+          '<h4>اطلاعات مشتری</h4>' +
+          '<dl>' +
+            row('نام', d.firstName) +
+            row('نام خانوادگی', d.lastName) +
+            row('شماره تماس', faDigits(d.phone)) +
+            row('نام مالک زمین', d.landOwner) +
+            row('ثبت‌کننده درخواست', d.requester) +
+          '</dl>' +
+        '</div>' +
+        '<div class="inv-box">' +
+          '<h4>اطلاعات زمین</h4>' +
+          '<dl>' +
+            row('نام مزرعه', d.landName) +
+            row('روستا', d.village) +
+            row('شهرستان', d.county) +
+            row('استان', d.province) +
+            row('محصول', d.crop) +
+            row('مساحت (متر مربع)', fmt(d.m2) + ' متر مربع') +
+            row('مساحت (هکتار)', fmtDec(d.ha) + ' هکتار') +
+          '</dl>' +
+        '</div>' +
+      '</div>' +
+
+      '<table class="inv-table">' +
+        '<thead>' +
+          '<tr>' +
+            '<th>شرح خدمات</th>' +
+            '<th>مقدار</th>' +
+            '<th>نرخ واحد</th>' +
+            '<th>مبلغ</th>' +
+          '</tr>' +
+        '</thead>' +
+        '<tbody>' +
+          '<tr>' +
+            '<td>سم‌پاشی زمین زراعی' + (d.crop ? ' (' + esc(d.crop) + ')' : '') + '</td>' +
+            '<td>' + fmtDec(d.ha) + ' هکتار</td>' +
+            '<td>' + fmt(d.rate) + ' تومان</td>' +
+            '<td>' + fmt(d.opCost) + ' تومان</td>' +
+          '</tr>' +
+          '<tr>' +
+            '<td>هزینه رفت‌وآمد</td>' +
+            '<td>—</td>' +
+            '<td>—</td>' +
+            '<td>' + fmt(d.travel) + ' تومان</td>' +
+          '</tr>' +
+          '<tr>' +
+            '<td>تخفیف</td>' +
+            '<td>—</td>' +
+            '<td>—</td>' +
+            '<td>− ' + fmt(d.discount) + ' تومان</td>' +
+          '</tr>' +
+        '</tbody>' +
+        '<tfoot>' +
+          '<tr>' +
+            '<th colspan="3">مبلغ نهایی قابل پرداخت</th>' +
+            '<th>' + fmt(d.total) + ' تومان</th>' +
+          '</tr>' +
+        '</tfoot>' +
+      '</table>' +
+
+      '<div class="inv-op">' +
+        '<h4>اطلاعات عملیات</h4>' +
+        '<div class="inv-op-grid">' +
+          '<div><span>تاریخ عملیات</span><b>' + esc(opDateFa) + '</b></div>' +
+          '<div><span>ساعت عملیات</span><b>' + esc(opTimeFa) + '</b></div>' +
+          '<div><span>نوع عملیات</span><b>' + esc(d.opType || '—') + '</b></div>' +
+          '<div><span>تعداد دفعات</span><b>' + esc(faDigits(d.times)) + '</b></div>' +
+        '</div>' +
+      '</div>' +
+
+      (d.notes ? '<div class="inv-notes"><h4>توضیحات</h4><p>' + esc(d.notes) + '</p></div>' : '') +
+
+      '<div class="inv-foot">' +
+        '<strong>با تشکر از اعتماد شما</strong>' +
+        '<span>خدمات تخصصی سم‌پاشی با پهپاد کشاورزی</span>' +
+      '</div>';
+  }
+
+  /* ==========================================================
+     ۱۴) پیام واتساپ
+     ========================================================== */
+  function buildWhatsAppMessage(d) {
+    const L = [];
+    L.push('🚁 درخواست جدید سم‌پاشی پهپادی');
+    L.push('━━━━━━━━━━━━━━');
+    L.push('');
+    L.push('👤 اطلاعات مشتری');
+    L.push('نام و نام خانوادگی: ' + (d.firstName + ' ' + d.lastName).trim());
+    L.push('شماره تماس: ' + faDigits(d.phone));
+    if (d.landOwner) L.push('نام مالک زمین: ' + d.landOwner);
+    if (d.requester) L.push('ثبت‌کننده درخواست: ' + d.requester);
+    L.push('');
+    L.push('📍 اطلاعات زمین');
+    if (d.landName) L.push('نام زمین: ' + d.landName);
+    if (d.village) L.push('روستا: ' + d.village);
+    if (d.county) L.push('شهرستان: ' + d.county);
+    L.push('استان: ' + d.province);
+    L.push('نوع محصول: ' + (d.crop || '—'));
+    L.push('مساحت: ' + fmt(d.m2) + ' متر مربع');
+    L.push('مساحت: ' + fmtDec(d.ha) + ' هکتار');
+    L.push('');
+    L.push('🚜 اطلاعات عملیات');
+    L.push('تاریخ پیشنهادی: ' + (d.opDate ? isoToPersianShort(d.opDate) : '—'));
+    L.push('ساعت پیشنهادی: ' + (d.opTime ? faDigits(d.opTime) : '—'));
+    L.push('نوع عملیات: ' + (d.opType || '—'));
+    L.push('تعداد دفعات: ' + faDigits(d.times));
+    L.push('');
+    L.push('💰 اطلاعات مالی');
+    L.push('نرخ هر هکتار: ' + fmt(d.rate) + ' تومان');
+    L.push('هزینه عملیات: ' + fmt(d.opCost) + ' تومان');
+    L.push('هزینه رفت‌وآمد: ' + fmt(d.travel) + ' تومان');
+    L.push('تخفیف: ' + fmt(d.discount) + ' تومان');
+    L.push('مبلغ نهایی: ' + fmt(d.total) + ' تومان');
+    L.push('');
+    if (d.notes) {
+      L.push('📝 توضیحات مشتری');
+      L.push(d.notes);
+      L.push('');
+    }
+    L.push('🕒 تاریخ ثبت درخواست: ' + d.issueDate);
+    L.push('🕒 ساعت ثبت درخواست: ' + d.issueTime);
+    L.push('شماره فاکتور: ' + d.invoiceNo);
+    L.push('');
+    L.push('⏳ وضعیت: در انتظار تأیید صاحب دستگاه');
+    return L.join('\n');
+  }
+
+  function sendToWhatsApp(d) {
+    const msg = buildWhatsAppMessage(d);
+    const url = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURIComponent(msg);
+    const win = window.open(url, '_blank', 'noopener');
+    if (!win) {
+      showToast('مرورگر شما باز شدن پنجره جدید را مسدود کرده است. لطفاً اجازه دهید.', true);
+    } else {
+      showToast('پیام سفارش آماده شد؛ در واتساپ دکمه ارسال را بزنید.');
+    }
+  }
+
+  async function sendToSocialMessenger(d, platform) {
+    const msg = buildWhatsAppMessage(d);
+    const destinations = { rubika: 'https://rubika.ir/aligholami0655', eitaa: 'https://eitaa.com/aligholami0655' };
+    const label = platform === 'rubika' ? 'روبیکا' : 'ایتا';
+    const opened = window.open(destinations[platform], '_blank', 'noopener');
+    let copied = false;
+    try { await navigator.clipboard.writeText(msg); copied = true; }
+    catch (err) {
+      try {
+        const ta = document.createElement('textarea'); ta.value = msg;
+        ta.style.position = 'fixed'; ta.style.opacity = '0'; document.body.appendChild(ta); ta.select();
+        copied = document.execCommand('copy'); document.body.removeChild(ta);
+      } catch (fallbackErr) { copied = false; }
+    }
+    if (!opened) showToast('باز شدن صفحه ' + label + ' مسدود شد. لینک را از منوی سایت باز کنید.', true);
+    if (copied) showToast('متن کامل سفارش کپی شد. در ' + label + ' متن را Paste کرده و ارسال کنید.');
+    else showToast('صفحه ' + label + ' باز شد؛ متن سفارش را از فاکتور کپی کنید.', true);
+  }
+
+  /* ==========================================================
+     ۱۵) چاپ فاکتور
+     ========================================================== */
+  let lastInvoiceData = null;
+
+  function printInvoice() {
+    if (!lastInvoiceData) {
+      if (!validateForm()) return;
+      lastInvoiceData = collectData();
+    }
+    const printArea = byId('printArea');
+    if (!printArea) return;
+    printArea.innerHTML = '<div class="invoice-sheet">' + buildInvoiceHTML(lastInvoiceData) + '</div>';
+    setTimeout(() => { window.print(); }, 120);
+  }
+
+  /* ==========================================================
+     ۱۶) راه‌اندازی فرم
+     ========================================================== */
+  function initForm() {
+    const form = byId('orderForm');
+    if (!form) return;
+
+    const rateRange = byId('rateRange');
+    const rateInput = byId('rate');
+    const invoiceArea = byId('invoiceArea');
+    const invoiceSheet = byId('invoiceSheet');
+
+    /* فرم در هر بار باز شدن صفحه خالی شروع می‌شود؛ پیش‌نویس قبلی بارگذاری نمی‌شود */
+    try { localStorage.removeItem(DRAFT_KEY); } catch (e) {}
+
+    /* --- همگام‌سازی نرخ --- */
+    if (rateRange && rateInput) {
+      const initial = Math.min(RATE_MAX, Math.max(RATE_MIN, toNumber(rateInput.value) || 2500000));
+      rateInput.value = initial;
+      rateRange.value = initial;
+
+      rateRange.addEventListener('input', () => {
+        rateInput.value = rateRange.value;
+        updateCalculator();
+        refreshInvoiceIfOpen();
+      });
+
+      rateInput.addEventListener('input', () => {
+        const v = toNumber(rateInput.value);
+        if (v >= RATE_MIN && v <= RATE_MAX) rateRange.value = v;
+        updateCalculator();
+        refreshInvoiceIfOpen();
+      });
+
+      rateInput.addEventListener('blur', () => {
+        let v = toNumber(rateInput.value);
+        if (!v) v = RATE_MIN;
+        v = Math.min(RATE_MAX, Math.max(RATE_MIN, v));
+        rateInput.value = v;
+        rateRange.value = v;
+        updateCalculator();
+        refreshInvoiceIfOpen();
+      });
+    }
+
+    /* --- محاسبه لحظه‌ای --- */
+    ['area', 'areaUnit', 'travel', 'discount'].forEach(id => {
+      const el = byId(id);
+      if (el) {
+        el.addEventListener('input', () => { updateCalculator(); refreshInvoiceIfOpen(); });
+        el.addEventListener('change', () => { updateCalculator(); refreshInvoiceIfOpen(); });
+      }
+    });
+
+    updateCalculator();
+
+    /* --- پاک‌سازی خطا هنگام تایپ --- */
+    FIELD_IDS.forEach(id => {
+      const el = byId(id);
+      if (!el) return;
+      const clear = () => setFieldError(el, false);
+      el.addEventListener('input', clear);
+      el.addEventListener('change', clear);
+    });
+
+    /* --- ذخیره پیش‌نویس --- */
+    let saveTimer = null;
+    form.addEventListener('input', () => {
+      clearTimeout(saveTimer);
+      saveTimer = setTimeout(saveDraft, 600);
+    });
+
+    function saveDraft() {
+      try {
+        const data = {};
+        FIELD_IDS.forEach(id => {
+          const el = byId(id);
+          if (el) data[id] = el.value;
+        });
+        localStorage.setItem(DRAFT_KEY, JSON.stringify(data));
+      } catch (e) { /* حافظه در دسترس نیست */ }
+    }
+
+    /* --- به‌روزرسانی فاکتور در صورت باز بودن --- */
+    function refreshInvoiceIfOpen() {
+      if (!invoiceArea || invoiceArea.hidden) return;
+      if (!validateForm(true)) return;
+      lastInvoiceData = collectData();
+      if (invoiceSheet) invoiceSheet.innerHTML = buildInvoiceHTML(lastInvoiceData);
+    }
+
+    /* --- پیش‌نمایش فاکتور --- */
+    const btnPreview = byId('btnPreview');
+    if (btnPreview) {
+      btnPreview.addEventListener('click', () => {
+        if (!validateForm()) return;
+        lastInvoiceData = collectData();
+        if (invoiceSheet) invoiceSheet.innerHTML = buildInvoiceHTML(lastInvoiceData);
+        if (invoiceArea) {
+          invoiceArea.hidden = false;
+          setTimeout(() => {
+            invoiceArea.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 60);
+        }
+        showToast('پیش‌فاکتور با موفقیت ساخته شد.');
+      });
+    }
+
+    /* --- واتساپ --- */
+    const btnWa = byId('btnWhatsapp');
+    if (btnWa) {
+      btnWa.addEventListener('click', () => {
+        if (!validateForm()) return;
+        lastInvoiceData = collectData();
+        sendToWhatsApp(lastInvoiceData);
+      });
+    }
+    const btnWa2 = byId('btnWa2');
+    if (btnWa2) {
+      btnWa2.addEventListener('click', () => {
+        if (!validateForm()) return;
+        if (!lastInvoiceData) lastInvoiceData = collectData();
+        sendToWhatsApp(lastInvoiceData);
+      });
+    }
+
+    /* --- روبیکا و ایتا --- */
+    ['rubika', 'eitaa'].forEach(platform => {
+      const button = byId(platform === 'rubika' ? 'btnRubika' : 'btnEitaa');
+      if (button) button.addEventListener('click', async () => {
+        if (!validateForm()) return;
+        lastInvoiceData = collectData();
+        await sendToSocialMessenger(lastInvoiceData, platform);
+      });
+    });
+
+    /* --- چاپ --- */
+    const btnPrint = byId('btnPrint');
+    if (btnPrint) btnPrint.addEventListener('click', printInvoice);
+
+    /* --- بستن پیش‌نمایش --- */
+    const btnClose = byId('btnCloseInvoice');
+    if (btnClose) {
+      btnClose.addEventListener('click', () => {
+        if (invoiceArea) invoiceArea.hidden = true;
+        lastInvoiceData = null;
+      });
+    }
+
+    /* --- ارسال با Enter --- */
+    form.addEventListener('submit', e => { e.preventDefault(); });
+  }
+
+  /* ==========================================================
+     ۱۷) راه‌اندازی نهایی
+     ========================================================== */
+  function initFooterYear() {
+    const el = byId('footerYear');
+    if (!el) return;
+    try {
+      el.textContent = new Intl.DateTimeFormat('fa-IR', { year: 'numeric' }).format(new Date());
+    } catch (e) { /* نادیده گرفتن */ }
+  }
+
+  function initJalaliDatePicker() {
+    const display = byId('opDateDisplay');
+    const hidden = byId('opDate');
+    if (!display || !hidden || !window.jQuery || !jQuery.fn.persianDatepicker) return;
+    jQuery(display).persianDatepicker({
+      format: 'YYYY/MM/DD',
+      autoClose: true,
+      initialValue: false,
+      observer: false,
+      persianDigit: true,
+      onSelect: function (unixDate) {
+        const selected = new Date(unixDate);
+        const yyyy = selected.getFullYear();
+        const mm = String(selected.getMonth() + 1).padStart(2, '0');
+        const dd = String(selected.getDate()).padStart(2, '0');
+        hidden.value = yyyy + '-' + mm + '-' + dd;
+        hidden.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+    });
+  }
+
+  function boot() {
+    initJalaliDatePicker();
+    initImages();
+    initNav();
+    initReveal();
+    initLightbox();
+    initForm();
+    initFooterYear();
+    tickClock();
+    setInterval(tickClock, 1000);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', boot);
+  } else {
+    boot();
+  }
+})();
+</script>
+</body>
+</html>
